@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /App_Data/
+Disallow: /bin/
+Disallow: /obj/
+Disallow: /App_Code/
+Disallow: /My Project/
+
+Sitemap: https://jaredthenyctourguide.com/sitemap.xml

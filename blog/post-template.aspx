@@ -12,7 +12,26 @@
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=4.0 user-scalable=yes" />    
     <link rel="SHORTCUT ICON" href="https://jaredthenyctourguide.com/favicon.ico"  type="image/x-icon"/>
-    <link type="text/css" href="/Styles/jared.css?ver=3.20" rel="stylesheet" />
+    <meta name="description" content="Read NYC stories, history insights, and tour notes from Jared The NYC Tour Guide blog." />
+    <link rel="canonical" href="<%= Request.Url.GetLeftPart(UriPartial.Path).ToLowerInvariant() %>" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Jared The NYC Tour Guide Blog Post",
+      "mainEntityOfPage": "<%= Request.Url.GetLeftPart(UriPartial.Path).ToLowerInvariant() %>",
+      "author": {
+        "@type": "Person",
+        "name": "Jared Goldstein"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Jared The NYC Tour Guide",
+        "url": "https://jaredthenyctourguide.com/"
+      }
+    }
+    </script>
+    <link type="text/css" href="/Styles/jared.css?ver=3.21" rel="stylesheet" />
 	<link type="text/css" href="/Styles/jquery.mmenu.all.css" rel="stylesheet" />
     
 	<link type="text/css" href="/Styles/pmBlog.css" rel="stylesheet" />
