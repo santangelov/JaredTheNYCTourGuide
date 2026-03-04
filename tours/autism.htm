@@ -20,11 +20,7 @@
       "@type": "Service",
       "name": "Autism-Friendly NYC Tour",
       "description": "Inclusive private New York City tours tailored for guests on the autism spectrum.",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Jared The NYC Tour Guide",
-        "url": "https://jaredthenyctourguide.com/"
-      },
+      "provider": {"@id": "https://jaredthenyctourguide.com/#organization"},
       "areaServed": {
         "@type": "City",
         "name": "New York"
@@ -51,6 +47,29 @@
         })();
 
     </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://jaredthenyctourguide.com/#organization",
+  "name": "Jared The NYC Tour Guide",
+  "url": "https://jaredthenyctourguide.com/",
+  "logo": "https://jaredthenyctourguide.com/images/JaredLogo.jpg",
+  "telephone": "+1-917-533-1057",
+  "email": "tours@JaredTheNYCTourGuide.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://jaredthenyctourguide.com/"},
+    {"@type":"ListItem","position":2,"name":"Tours","item":"https://jaredthenyctourguide.com/tours/"},
+    {"@type":"ListItem","position":3,"name":"Autism Walking Tours","item":"https://jaredthenyctourguide.com/tours/autism.htm"}
+  ]
+}
+</script>
 </head>
 
 <body>

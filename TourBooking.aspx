@@ -66,7 +66,29 @@
     "addressRegion": "NY",
     "addressCountry": "US"
   }
-}</script></head>
+}</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://jaredthenyctourguide.com/#organization",
+  "name": "Jared The NYC Tour Guide",
+  "url": "https://jaredthenyctourguide.com/",
+  "logo": "https://jaredthenyctourguide.com/images/JaredLogo.jpg",
+  "telephone": "+1-917-533-1057",
+  "email": "tours@JaredTheNYCTourGuide.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://jaredthenyctourguide.com/"},
+    {"@type":"ListItem","position":2,"name":"Book Your Tour","item":"https://jaredthenyctourguide.com/tourBooking.aspx"}
+  ]
+}
+</script>
+</head>
 <body>
 <form id="form1" runat="server">
 <div class="bodyWrapper">
