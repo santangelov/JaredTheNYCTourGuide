@@ -1,0 +1,668 @@
+/* ========================================
+   Modern Testimonials Page Styles
+   Overrides jared.css - Load AFTER jared.css
+   ======================================== */
+
+/* VIN ADDITIONS */
+.gold {color: #ffd700 !important;}
+
+/* ========================================
+   1. GLOBAL RESETS & BASE STYLES
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background-image: url(../images/bg.gif);
+}
+
+/* Force modern font family on all container elements */
+.container * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
+}
+
+/* ========================================
+   2. CONTAINER & LAYOUT
+   ======================================== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Override clear divs to not clear floats from image boxes */
+.container .clear {
+    clear: none !important;
+}
+
+/* Only clear floats after the last testimonial before Press section */
+.press-clippings {
+    clear: both !important;
+}
+
+/* ========================================
+   3. TYPOGRAPHY OVERRIDES
+   ======================================== */
+
+.container h1 {
+    font-size: 1.4em;
+    color: #5A7E50; 
+    margin: 30px 0 !important;
+    text-align: center;
+    font-weight: normal;
+    text-align:left;
+}
+
+.container h3 {
+    font-size: 2rem !important;
+    color: #667eea !important;
+    margin: 50px 0 30px 0 !important;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea !important;
+    font-weight: 700 !important;
+    clear: both !important;
+}
+
+/* ========================================
+   4. LINK STYLES
+   ======================================== */
+
+.container a:link,
+.container a:visited {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+    color: #667eea;
+}
+
+.container .link-ta {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00AF87 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    font-size: 1.1rem;
+    transition: opacity 0.3s;
+}
+
+.container .link-ta:hover {
+    opacity: 0.7;
+    text-decoration: none !important;
+}
+
+/* ========================================
+   5. HERO SECTION - TRIPADVISOR BOX
+   ======================================== */
+
+.container .imageTextSplitWrapper {
+    display: flex;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    margin: 40px 0;
+    min-height: 400px;
+}
+
+.container .imageTextSplitLeftSide {
+    width: 33%;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    flex-shrink: 0;
+}
+
+.container .imageTextSplitRightSide {
+    width: 67%;
+    padding: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    min-width: 0;
+}
+
+.container .imageTextSplitRightSide h2 {
+    color: #00AF87 !important;
+    font-size: 2rem !important;
+    margin-bottom: 15px !important;
+    margin-top: 0 !important;
+    font-weight: 700 !important;
+    line-height: 1.1 !important;
+}
+
+.container .imageTextSplitRightSide p {
+    margin-bottom: 12px !important;
+    margin-top: 0 !important;
+    font-size: 0.98rem !important;
+    line-height: 1.5 !important;
+}
+
+.container .imageTextSplitRightSide strong {
+    font-weight: 700 !important;
+}
+
+/* ========================================
+   6. SECTION NAVIGATION BUTTONS
+   ======================================== */
+
+.container .sectionButton {
+    display: inline-block !important;
+    width: 32% !important;
+    margin: 10px 0.5% !important;
+    text-align: center !important;
+    min-width: auto !important;
+    height: auto !important;
+    float: none !important;
+    border: 2px solid #e2e8f0 !important;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    background-color: #f8f9fa !important;
+    border-radius: 10px !important;
+    padding: 24px 20px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+}
+
+.container .sectionButton a {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #2d3748 !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.container .sectionButton a:link,
+.container .sectionButton a:visited {
+    color: #2d3748 !important;
+    text-decoration: none !important;
+}
+
+.container .sectionButton a:hover {
+    color: #667eea !important;
+    text-decoration: none !important;
+}
+
+.container .sectionButton:hover {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+    background-color: #ffffff !important;
+    border-color: #cbd5e0 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.12) !important;
+}
+
+.container .sectionButton svg {
+    width: 28px !important;
+    height: 28px !important;
+    margin-bottom: 10px !important;
+    margin-top: 0 !important;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: block !important;
+}
+
+.container .sectionButton i {
+    font-size: 1rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    color: inherit !important;
+    display: none !important;
+}
+
+/* ========================================
+   7. JARED HIGHLIGHT BOX
+   ======================================== */
+
+.jared-highlight {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    border-radius: 16px !important;
+    padding: 40px !important;
+    margin: 40px 0 !important;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08) !important;
+}
+
+.jared-highlight-image {
+    flex-shrink: 0;
+}
+
+.jared-highlight-image img {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 16px !important;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12) !important;
+}
+
+.jared-highlight-content {
+    flex: 1;
+}
+
+.jared-highlight h2 {
+    color: #2d3748 !important;
+    font-size: 1.8rem !important;
+    margin-bottom: 10px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+}
+
+.jared-highlight .stars {
+    color: #ffd700 !important;
+    font-size: 1.3rem !important;
+    margin-bottom: 10px !important;
+}
+
+.jared-highlight p {
+    color: #4a5568 !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+}
+
+.jared-highlight-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.jared-highlight-buttons a {
+    padding: 12px 30px !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #2d5016 !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background: #1e3610 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 80, 22, 0.3) !important;
+    text-decoration: none !important;
+}
+
+.btn-secondary {
+    background: white !important;
+    color: #2d3748 !important;
+    border: 2px solid #e2e8f0 !important;
+}
+
+.btn-secondary:hover {
+    border-color: #667eea !important;
+    color: #667eea !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15) !important;
+    text-decoration: none !important;
+}
+
+.btn-tertiary {
+    background: transparent !important;
+    color: #2d3748 !important;
+    border: 2px solid #cbd5e0 !important;
+}
+
+.btn-tertiary:hover {
+    border-color: #2d3748 !important;
+    transform: translateY(-2px);
+    text-decoration: none !important;
+}
+
+.badge-logos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px !important;
+}
+
+.badge-logos img {
+    height: 40px !important;
+    width: auto !important;
+}
+
+/* ========================================
+   8. TESTIMONIALS
+   ======================================== */
+
+.container .testimonial {
+    background: linear-gradient(135deg, #f6f9fc 0%, #e9f2f9 100%) !important;
+    padding: 30px !important;
+    padding-left: 34px !important;
+    border-radius: 12px !important;
+    margin-bottom: 25px !important;
+    border-left: 4px solid #667eea !important;
+    border-bottom: none !important;
+    font-size: 1.05rem !important;
+    line-height: 1.8 !important;
+    position: relative;
+    z-index: 1;
+    overflow: auto !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.container .testimonial h4 {
+    color: #667eea !important;
+    font-size: 1.2rem !important;
+    margin-bottom: 15px !important;
+    margin-left: 0 !important;
+    font-weight: 600 !important;
+}
+
+.container .testimonial p {
+    margin-bottom: 12px !important;
+}
+
+.container .signed {
+    font-weight: 600 !important;
+    color: #667eea !important;
+}
+
+.container .asterisk {
+    color: #ff6b6b !important;
+    font-weight: bold !important;
+}
+
+.container .footnote {
+    font-size: 0.9rem !important;
+    color: #718096 !important;
+    font-style: italic;
+}
+
+/* Testimonial Date Badge */
+.testimonial-date {
+    font-weight: 700 !important;
+    color: #667eea !important;
+    font-size: 0.95rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px !important;
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+/* Blockquotes and Jared Notes */
+.container blockquote {
+    background: #fff4e6 !important;
+    border-left: 4px solid #ff9800 !important;
+    padding: 15px 20px !important;
+    border-radius: 8px !important;
+    margin: 15px 0 !important;
+    font-style: italic;
+}
+
+.jared-note {
+    background: #fff4e6 !important;
+    border-left: 4px solid #ff9800 !important;
+    padding: 18px 22px !important;
+    border-radius: 8px !important;
+    margin: 15px 0 !important;
+    font-style: italic;
+    color: #8b5a00 !important;
+}
+
+.jared-note strong {
+    color: #ff9800 !important;
+    font-style: normal;
+}
+
+/* ========================================
+   9. IMAGE BOXES - ALL RIGHT ALIGNED
+   ======================================== */
+
+.container .responsiveImageBox {
+    text-align: center;
+    background: white !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08) !important;
+    position: relative;
+    z-index: 10;
+    border: none !important;
+    float: right !important;
+    width: 42% !important;
+    max-width: 450px !important;
+    margin: 10px 0 20px 30px !important;
+    clear: none !important;
+}
+
+/* Force all image boxes to float right, regardless of class */
+.container .responsiveImageBox.alignRILeft,
+.container .responsiveImageBox.alignRIRight {
+    float: right !important;
+    width: 42% !important;
+    max-width: 450px !important;
+    margin: 10px 0 20px 30px !important;
+    clear: none !important;
+}
+
+.container .responsiveImageBox img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+.container .responsiveImageBox p {
+    margin-top: 15px !important;
+    font-size: 0.95rem !important;
+    color: #4a5568 !important;
+    font-style: italic;
+    line-height: 1.6 !important;
+}
+
+/* ========================================
+   10. PRESS SECTION
+   ======================================== */
+
+.press-clippings {
+    background: white !important;
+    padding: 50px !important;
+    border-radius: 16px !important;
+    margin: 60px 0 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
+}
+
+.press-clippings h3 {
+    color: #2d3748 !important;
+    border-bottom: none !important;
+    margin-bottom: 35px !important;
+    font-size: 2rem !important;
+    text-align: center;
+}
+
+.press-quote {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    padding: 30px !important;
+    border-radius: 12px !important;
+    border: 1px solid #e2e8f0 !important;
+    margin-bottom: 30px !important;
+    width: 40% !important;
+    float: left !important;
+    box-sizing: border-box !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    margin-right: 40px;
+}
+
+.press-quote:nth-child(odd) {
+    margin-right: 8% !important;
+}
+
+.press-quote:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15) !important;
+}
+
+.press-source {
+    color: #667eea !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 18px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.press-source::before {
+    content: "📰" !important;
+    font-size: 1.5rem !important;
+    margin-right: 10px !important;
+}
+
+.press-quote p {
+    font-size: 1.1rem !important;
+    line-height: 1.75 !important;
+    font-style: italic;
+    color: #2d3748 !important;
+    margin-bottom: 20px !important;
+}
+
+.press-quote a {
+    color: #667eea !important;
+    text-decoration: none !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    transition: color 0.3s;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+.press-quote a::after {
+    content: " →" !important;
+    margin-left: 5px !important;
+    transition: margin-left 0.3s ease !important;
+}
+
+.press-quote a:hover {
+    color: #764ba2 !important;
+    text-decoration: none !important;
+}
+
+.press-quote a:hover::after {
+    margin-left: 10px !important;
+}
+
+/* Clear floats after press quotes */
+.press-clippings::after {
+    content: "" !important;
+    display: table !important;
+    clear: both !important;
+}
+
+/* ========================================
+   11. RESPONSIVE MEDIA QUERIES
+   ======================================== */
+
+@media (max-width: 768px) {
+    .container .imageTextSplitWrapper {
+        flex-direction: column;
+    }
+
+    .container .imageTextSplitLeftSide,
+    .container .imageTextSplitRightSide {
+        width: 100%;
+    }
+
+    .container .imageTextSplitRightSide {
+        padding: 30px 20px;
+    }
+    
+    .container .imageTextSplitRightSide h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .container .sectionButton {
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
+
+    .container .testimonial {
+        width: 100% !important;
+    }
+
+    .container .responsiveImageBox,
+    .container .responsiveImageBox.alignRILeft,
+    .container .responsiveImageBox.alignRIRight {
+        float: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 20px 0 !important;
+    }
+
+    .container h1 {
+        font-size: 2rem !important;
+    }
+
+    .container h3 {
+        font-size: 1.6rem !important;
+    }
+
+    .press-clippings {
+        padding: 35px 25px !important;
+    }
+
+    .press-quote {
+        width: 100% !important;
+        float: none !important;
+        margin-right: 0 !important;
+    }
+
+    .press-quote p {
+        font-size: 1.05rem !important;
+    }
+
+    .jared-highlight {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px !important;
+    }
+
+    .jared-highlight-buttons {
+        justify-content: center;
+    }
+
+    .badge-logos {
+        justify-content: center;
+    }
+}

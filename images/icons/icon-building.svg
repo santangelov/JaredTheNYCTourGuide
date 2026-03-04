@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Building icon">
+  <defs>
+    <style>
+      .s{stroke:#315136;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .f{fill:#315136}
+    </style>
+  </defs>
+  <path class="s" d="M26 84V28l22-12 22 12v56"/>
+  <path class="s" d="M26 84h44"/>
+  <path class="s" d="M40 84V68h16v16"/>
+  <path class="s" d="M38 34h0"/>
+  <path class="s" d="M58 34h0"/>
+  <path class="s" d="M38 46h0"/>
+  <path class="s" d="M58 46h0"/>
+  <path class="s" d="M38 58h0"/>
+  <path class="s" d="M58 58h0"/>
+</svg>

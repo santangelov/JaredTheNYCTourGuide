@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Map pin icon">
+  <defs>
+    <style>
+      .s{stroke:#315136;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .f{fill:#315136}
+    </style>
+  </defs>
+  <path class="s" d="M48 84c16-18 24-31 24-44 0-13.255-10.745-24-24-24S24 26.745 24 40c0 13 8 26 24 44z"/>
+  <circle class="s" cx="48" cy="40" r="8"/>
+  <path class="s" d="M22 84h52"/>
+</svg>

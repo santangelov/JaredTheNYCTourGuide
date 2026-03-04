@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{BB24302D-D18B-4900-A79B-8491C1BB06F0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>JaredTheNYCTourGuideCom</RootNamespace>
+    <AssemblyName>JaredTheNYCTourGuideCom</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44367</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>JaredTheNYCTourGuideCom.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>JaredTheNYCTourGuideCom.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PixelMarsalaCore.Blog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PixelMarsalaCore.Blog.dll</HintPath>
+    </Reference>
+    <Reference Include="PixelMarsalaCore.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PixelMarsalaCore.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PixelMarsalaCore.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PixelMarsalaCore.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PixelMarsalaCore.GlobalSettings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PixelMarsalaCore.GlobalSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="PixelMarsalaCore.Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\PixelMarsalaCore.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="75E11137CA6068FD480805BF45BED0F9.txt" />
+    <Content Include="aboutJared.htm" />
+    <Content Include="App_UserControls\blogArchiveNav.ascx" />
+    <Content Include="App_UserControls\blogEntries.ascx" />
+    <Content Include="App_UserControls\blogPost.ascx" />
+    <Content Include="App_UserControls\blogSocialMediaBar.ascx" />
+    <Content Include="App_UserControls\blogTitle.ascx" />
+    <Content Include="AP_Art_History_Tour.htm" />
+    <Content Include="bin\PixelMarsalaCore.Blog.dll" />
+    <Content Include="bin\PixelMarsalaCore.Common.dll" />
+    <Content Include="bin\PixelMarsalaCore.Data.dll" />
+    <Content Include="bin\PixelMarsalaCore.GlobalSettings.dll" />
+    <Content Include="bin\PixelMarsalaCore.Security.dll" />
+    <Content Include="blog\Default.aspx" />
+    <Content Include="blog\minus.gif" />
+    <Content Include="blog\plus.gif" />
+    <Content Include="blog\post-template.aspx" />
+    <Content Include="contact.htm" />
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-grid.rtl.css" />
+    <Content Include="css\bootstrap-grid.rtl.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap-reboot.rtl.css" />
+    <Content Include="css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="css\bootstrap-utilities.css" />
+    <Content Include="css\bootstrap-utilities.min.css" />
+    <Content Include="css\bootstrap-utilities.rtl.css" />
+    <Content Include="css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap.rtl.css" />
+    <Content Include="css\bootstrap.rtl.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="custom_Tours.htm" />
+    <Content Include="destinations.htm" />
+    <Content Include="faqs.htm" />
+    <Content Include="favicon.ico" />
+    <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="google62dd28461ed2de1a.html" />
+    <Content Include="Gilded-Age-Tour.html" />
+    <Content Include="images\1-apples.png" />
+    <Content Include="images\2-apples.png" />
+    <Content Include="images\3-apples.png" />
+    <Content Include="images\9-11 memorial logo.jpg" />
+    <Content Include="images\apollo-theatre-new-york-ny.jpeg" />
+    <Content Include="images\Backshade.jpg" />
+    <Content Include="images\banner-2022.png" />
+    <Content Include="images\banner-2023.png" />
+    <Content Include="images\banner.gif" />
+    <Content Include="images\bg.gif" />
+    <Content Include="images\Blurred audience.jpg" />
+    <Content Include="images\Brooklyn-Bridge.jpeg" />
+    <Content Include="images\CentralPark.jpg" />
+    <Content Include="images\christmas-nyse-2009.jpg" />
+    <Content Include="images\CityFoodTour.jpg" />
+    <Content Include="images\CityFoodTour2.jpg" />
+    <Content Include="images\CityTour.jpg" />
+    <Content Include="images\Colonial Tour Jared.jpg" />
+    <Content Include="images\Crowd-and-jared.jpg" />
+    <Content Include="images\Crowd1.jpg" />
+    <Content Include="images\CusomGalleryTour.jpg" />
+    <Content Include="images\destination-icons\42nd.jpg" />
+    <Content Include="images\destination-icons\brooklyn-bridge.jpg" />
+    <Content Include="images\destination-icons\Central-park.jpg" />
+    <Content Include="images\destination-icons\chinatown.jpg" />
+    <Content Include="images\destination-icons\colony.jpg" />
+    <Content Include="images\destination-icons\DUMBO.jpg" />
+    <Content Include="images\destination-icons\east-village.jpg" />
+    <Content Include="images\destination-icons\gardens.jpg" />
+    <Content Include="images\destination-icons\harlem.jpg" />
+    <Content Include="images\destination-icons\high-line.jpg" />
+    <Content Include="images\destination-icons\holiday-lights.jpg" />
+    <Content Include="images\destination-icons\jewish les.jpg" />
+    <Content Include="images\destination-icons\lower-east-side.jpg" />
+    <Content Include="images\destination-icons\museum.jpg" />
+    <Content Include="images\destination-icons\rockefeller.jpg" />
+    <Content Include="images\destination-icons\santa.jpg" />
+    <Content Include="images\destination-icons\seaport.jpg" />
+    <Content Include="images\destination-icons\skyscrapers.jpg" />
+    <Content Include="images\destination-icons\times sq.jpg" />
+    <Content Include="images\destination-icons\village.jpg" />
+    <Content Include="images\destination-icons\wtc.jpg" />
+    <Content Include="images\Destinations_Met_Museum_Banner.jpg" />
+    <Content Include="images\facebook.jpg" />
+    <Content Include="images\facebook_32.gif" />
+    <Content Include="images\Greenwich-village-walk.jpg" />
+    <Content Include="images\Group-at-GCT.jpg" />
+    <Content Include="images\guides-assn-of-nyc-wide.jpg" />
+    <Content Include="images\guides-assn-of-nyc-wide.png" />
+    <Content Include="images\guides-assn-of-nyc.png" />
+    <Content Include="images\Hamilton-College-tour-Public-Art.jpg" />
+    <Content Include="images\hc logo.jpg" />
+    <Content Include="images\High-Line.jpeg" />
+    <Content Include="images\homePageShot01.jpg" />
+    <Content Include="images\homePageShot_mobile.jpg" />
+    <Content Include="images\icons\icon-building.svg" />
+    <Content Include="images\icons\icon-camera.svg" />
+    <Content Include="images\icons\icon-clock.svg" />
+    <Content Include="images\icons\icon-map.svg" />
+    <Content Include="images\Imagine-Central-Park-Strawberry-Fields.jpg" />
+    <Content Include="images\Interview on camera in Harlem.jpg" />
+    <Content Include="images\Jared at Conference.jpg" />
+    <Content Include="images\Jared Touring through Staten Island Ferry Terminal.jpg" />
+    <Content Include="images\Jared-At-Occulus.jpg" />
+    <Content Include="images\Jared-At-River.jpg" />
+    <Content Include="images\Jared-Central-Park.jpg" />
+    <Content Include="images\Jared-on-the-news-covid-nyc.jpg" />
+    <Content Include="images\Jared-on-tour-with-youngster.jpg" />
+    <Content Include="images\Jared-Pointing2011-alone.jpg" />
+    <Content Include="images\Jared-Pointing2011.jpg" />
+    <Content Include="images\Jared-Tour-NYC-2-Ladies.jpg" />
+    <Content Include="images\jaredAndBook.jpg" />
+    <Content Include="images\JaredCount1.gif" />
+    <Content Include="images\JaredCount2.gif" />
+    <Content Include="images\JaredHeadshot.jpg" />
+    <Content Include="images\jaredicon.png" />
+    <Content Include="images\JaredLogo.jpg" />
+    <Content Include="images\jaredOnTour01.jpg" />
+    <Content Include="images\jaredOnTour02.jpg" />
+    <Content Include="images\jaredOnTour03.jpg" />
+    <Content Include="images\JaredOnTourr.jpg" />
+    <Content Include="images\jaredPointing.jpg" />
+    <Content Include="images\JaredTourGuide.jpg" />
+    <Content Include="images\jaredWdollar.jpg" />
+    <Content Include="images\JaredWithFlag.jpg" />
+    <Content Include="images\JaredWithFlag2.jpg" />
+    <Content Include="images\katz-s-deli-sign-in-new-york-city.jpeg" />
+    <Content Include="images\Katz-slicedpastrami.jpg" />
+    <Content Include="images\Lennon-Tour\Article-John Lennon Tour 2020 Dakota.jpg" />
+    <Content Include="images\Lennon-Tour\Article-John Lennon tour December 7th 2020.jpg" />
+    <Content Include="images\Lennon-Tour\Article-John Lennon tour Jared in Strawberry Fields 2020.jpg" />
+    <Content Include="images\Lennon-Tour\Dakota 1890.jpg" />
+    <Content Include="images\Lennon-Tour\Dakota 2019.jpg" />
+    <Content Include="images\Lennon-Tour\Dakota entrance 2009.jpg" />
+    <Content Include="images\Lennon-Tour\Dakota from Strawberry Fields 2013.jpg" />
+    <Content Include="images\Lennon-Tour\Japan-TV-Episode-00.jpg" />
+    <Content Include="images\Lennon-Tour\Japan-TV-Episode-01.jpg" />
+    <Content Include="images\Lennon-Tour\Japan-TV-Episode-02.jpg" />
+    <Content Include="images\Lennon-Tour\Japan-TV-Episode-03.jpg" />
+    <Content Include="images\Lennon-Tour\Japan-TV-Episode-04.jpg" />
+    <Content Include="images\Lennon-Tour\Jared on Abbey Road.jpg" />
+    <Content Include="images\Lennon-Tour\John and Yoko 1980.jpg" />
+    <Content Include="images\Lennon-Tour\John and Yoko singing 1971.jpg" />
+    <Content Include="images\Lennon-Tour\John Lennon FBI File 1.jpg" />
+    <Content Include="images\Lennon-Tour\John Lennon FBI File 2.jpg" />
+    <Content Include="images\Lennon-Tour\John Lennon Green Card.jpg" />
+    <Content Include="images\Lennon-Tour\John Lennon recording Imagine 1971.jpg" />
+    <Content Include="images\Lennon-Tour\john-yoko.jpg" />
+    <Content Include="images\Lennon-Tour\JohnLennonPark_Havana.jpg" />
+    <Content Include="images\Lennon-Tour\john_all-shine-on.jpg" />
+    <Content Include="images\Lennon-Tour\john_Lennon_solo.jpg" />
+    <Content Include="images\Lennon-Tour\Lennon_plaque-JohnLennon-Park-Cuba.jpg" />
+    <Content Include="images\Lennon-Tour\Music-Inn-West-Village.jpg" />
+    <Content Include="images\Lennon-Tour\Strawberry Fields by derek rose is licensed under CC 2.jpg" />
+    <Content Include="images\Lennon-Tour\Strawberry Fields by Sammy Six is licensed under CC BY 2.jpg" />
+    <Content Include="images\Lennon-Tour\View from Strawberry Fields.jpg" />
+    <Content Include="images\Manhattan-Bridge-DUMBO.jpeg" />
+    <Content Include="images\Met-Museum-with-kids.jpg" />
+    <Content Include="images\Met_Museum\Armor at the Met Museum.jpg" />
+    <Content Include="images\Met_Museum\Christmas at Met Museum 1.jpg" />
+    <Content Include="images\Met_Museum\Domes and Flowers.jpg" />
+    <Content Include="images\Met_Museum\Egyptian Art at Met Museum.jpg" />
+    <Content Include="images\Met_Museum\European Sculpture at the Met Museum - Perseus by Canova.jpg" />
+    <Content Include="images\Met_Museum\Grand Column at Met Museum.jpg" />
+    <Content Include="images\Met_Museum\Great Hall Meeting Point with Jared.jpg" />
+    <Content Include="images\Met_Museum\Jackson Pollack at Met Museum.jpg" />
+    <Content Include="images\Met_Museum\Met Museum at Night.jpg" />
+    <Content Include="images\Met_Museum\Met Museum Private Tour 2025.jpg" />
+    <Content Include="images\Met_Museum\Met Museum Storage.jpg" />
+    <Content Include="images\Met_Museum\Met Tour Evaluation - 12 Year Old.jpg" />
+    <Content Include="images\Met_Museum\Met Tour Treasure - Ugolino and His Sons.jpg" />
+    <Content Include="images\Met_Museum\Met-Museum-Balcony.jpg" />
+    <Content Include="images\Met_Museum\Met-Museum-with-kids.jpg" />
+    <Content Include="images\Met_Museum\Met_Museum_Selfie.jpg" />
+    <Content Include="images\Met_Museum\Pompeii at Met with Jared.jpg" />
+    <Content Include="images\Met_Museum\Pompeii Room at Met Museum.jpg" />
+    <Content Include="images\Met_Museum\statue of Egyptian Queen Hapshetsut.jpg" />
+    <Content Include="images\Met_Museum\Suits of Armor at Met Museum.jpg" />
+    <Content Include="images\Met_Museum\Temple of Dendur.jpg" />
+    <Content Include="images\Met_Museum\Van Gough Self Portrait at Met Museum.jpg" />
+    <Content Include="images\Met_Museum\Washington Crossing Delaware at Met Museum.jpg" />
+    <Content Include="images\mini-tour-wall-street.jpg" />
+    <Content Include="images\mini-tour.jpg" />
+    <Content Include="images\MuseumTour1.jpg" />
+    <Content Include="images\MuseumTour2.jpg" />
+    <Content Include="images\nast-works.jpg" />
+    <Content Include="images\NYC-Cathedral.jpg" />
+    <Content Include="images\nyffbc logo.jpg" />
+    <Content Include="images\RockCenter.jpg" />
+    <Content Include="images\Santa-Tour-NYC.jpg" />
+    <Content Include="images\santaTour\clement-clarke-moore-plaque.jpg" />
+    <Content Include="images\santaTour\CommodoreCriterion.jpg" />
+    <Content Include="images\santaTour\JaredandSanta2012.jpg" />
+    <Content Include="images\santaTour\NYSE-Tree.jpg" />
+    <Content Include="images\santaTour\Rolfs-inside.jpg" />
+    <Content Include="images\santaTour\Santa-Claus-1837-naughty.jpg" />
+    <Content Include="images\santaTour\santa-in-nyc-window.jpg" />
+    <Content Include="images\Skyscrapers.jpeg" />
+    <Content Include="images\South Street Seaport.jpeg" />
+    <Content Include="images\south-street-seaport.jpg" />
+    <Content Include="images\theater lovers tour bus-Stouts executive travel.jpg" />
+    <Content Include="images\Times-Square.jpeg" />
+    <Content Include="images\Top-tours-on-tripadvisor-badge.png" />
+    <Content Include="images\Top_Of_the_Rock_Tour_Group_and_Jared.jpg" />
+    <Content Include="images\TourGuidesWithJared.jpg" />
+    <Content Include="images\tours\Colonial Tour Guide Jared.jpg" />
+    <Content Include="images\tours\federal hall nyc.jpg" />
+    <Content Include="images\tours\jared at seaport.jpg" />
+    <Content Include="images\tour_bus_nyc.jpg" />
+    <Content Include="images\tripadvisor-2020.jpg" />
+    <Content Include="images\tripadvisor-2020.png" />
+    <Content Include="images\TripAdvisor-Logo.wine.png" />
+    <Content Include="images\TripAdvisor2016Excllence.jpg" />
+    <Content Include="images\TripAdvisor2017Excllence.jpg" />
+    <Content Include="images\TripAdvisor2019Excllence.jpg" />
+    <Content Include="images\TripAdvisor2020Excllence.jpg" />
+    <Content Include="images\tripadvisor2022-TC.jpg" />
+    <Content Include="images\tripadvisor2022.jpg" />
+    <Content Include="images\tripadvisor2023-TC.jpg" />
+    <Content Include="images\tripadvisor2024-TC.jpg" />
+    <Content Include="images\tripadvisor2025-TC.jpg" />
+    <Content Include="images\twitter_32.png" />
+    <Content Include="images\view%402x.png" />
+    <Content Include="images\walking.jpg" />
+    <Content Include="images\WalkkingTour-5ThAve.jpg" />
+    <Content Include="images\washington-square-park-group-tour.jpg" />
+    <Content Include="images\World-Trade-Center-NYC.jpg" />
+    <Content Include="images\Yelp_trademark_RGB.png" />
+    <Content Include="index.htm" />
+    <Content Include="JohnLennonTheNYCTour.htm" />
+    <Content Include="js\addons\jquery.mmenu.autoheight.min.js" />
+    <Content Include="js\addons\jquery.mmenu.backbutton.min.js" />
+    <Content Include="js\addons\jquery.mmenu.counters.min.js" />
+    <Content Include="js\addons\jquery.mmenu.dividers.min.js" />
+    <Content Include="js\addons\jquery.mmenu.dragopen.min.js" />
+    <Content Include="js\addons\jquery.mmenu.fixedelements.min.js" />
+    <Content Include="js\addons\jquery.mmenu.navbars.min.js" />
+    <Content Include="js\addons\jquery.mmenu.offcanvas.min.js" />
+    <Content Include="js\addons\jquery.mmenu.searchfield.min.js" />
+    <Content Include="js\addons\jquery.mmenu.sectionindexer.min.js" />
+    <Content Include="js\addons\jquery.mmenu.toggles.min.js" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.esm.js" />
+    <Content Include="js\bootstrap.esm.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\charCount.js" />
+    <Content Include="js\jquery-2.1.3.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.mmenu.min.all.js" />
+    <Content Include="js\jquery.mmenu.min.js" />
+    <Content Include="js\jquery.mmenu.oncanvas.min.js" />
+    <Content Include="js_umd\addons\jquery.mmenu.autoheight.umd.js" />
+    <Content Include="js_umd\addons\jquery.mmenu.backbutton.umd.js" />
+    <Content Include="js_umd\addons\jquery.mmenu.counters.umd.js" />
+    <Content Include="js_umd\addons\jquery.mmenu.dividers.umd.js" />
+    <Content Include="js_umd\addons\jquery.mmenu.dragopen.umd.js" />
+    <Content Include="js_umd\addons\jquery.mmenu.fixedelements.umd.js" />
+    <Content Include="js_umd\addons\jquery.mmenu.navbars.umd.js" />
+    <Content Include="js_umd\addons\jquery.mmenu.offcanvas.umd.js" />
+    <Content Include="js_umd\addons\jquery.mmenu.searchfield.umd.js" />
+    <Content Include="js_umd\addons\jquery.mmenu.toggles.umd.js" />
+    <Content Include="js_umd\jquery.mmenu.oncanvas.umd.js" />
+    <Content Include="js_umd\jquery.mmenu.umd.all.js" />
+    <Content Include="js_umd\jquery.mmenu.umd.js" />
+    <Content Include="js_umd\_inc\affix.js" />
+    <Content Include="js_umd\_inc\prefix.js" />
+    <Content Include="Met_Museum_of_Art_Walking_Tour.htm" />
+    <Content Include="SantaClausNYCBirthDayTour.htm" />
+    <Content Include="santa\index.htm" />
+    <Content Include="scripts\jquery-1.4.1.min.js" />
+    <Content Include="scripts\pmBlog.js" />
+    <Content Include="scripts\respond.min.js" />
+    <Content Include="sitemap.xml" />
+    <Content Include="stepontours\index.htm" />
+    <Content Include="Styles\addons\jquery.mmenu.autoheight.css" />
+    <Content Include="Styles\addons\jquery.mmenu.counters.css" />
+    <Content Include="Styles\addons\jquery.mmenu.dividers.css" />
+    <Content Include="Styles\addons\jquery.mmenu.dragopen.css" />
+    <Content Include="Styles\addons\jquery.mmenu.navbars.css" />
+    <Content Include="Styles\addons\jquery.mmenu.offcanvas.css" />
+    <Content Include="Styles\addons\jquery.mmenu.searchfield.css" />
+    <Content Include="Styles\addons\jquery.mmenu.sectionindexer.css" />
+    <Content Include="Styles\addons\jquery.mmenu.toggles.css" />
+    <Content Include="Styles\extensions\jquery.mmenu.borderstyle.css" />
+    <Content Include="Styles\extensions\jquery.mmenu.effects.css" />
+    <Content Include="Styles\extensions\jquery.mmenu.fullscreen.css" />
+    <Content Include="Styles\extensions\jquery.mmenu.iconbar.css" />
+    <Content Include="Styles\extensions\jquery.mmenu.multiline.css" />
+    <Content Include="Styles\extensions\jquery.mmenu.pageshadow.css" />
+    <Content Include="Styles\extensions\jquery.mmenu.positioning.css" />
+    <Content Include="Styles\extensions\jquery.mmenu.themes.css" />
+    <Content Include="Styles\extensions\jquery.mmenu.widescreen.css" />
+    <Content Include="Styles\jared.css" />
+    <Content Include="Styles\jquery.mmenu.all.css" />
+    <Content Include="Styles\jquery.mmenu.css" />
+    <Content Include="Styles\jquery.mmenu.oncanvas.css" />
+    <Content Include="Styles\pmBlog.css" />
+    <Content Include="Styles\standardforms.css" />
+    <Content Include="Styles\testimonials-modern.css" />
+    <Content Include="testimonials.htm" />
+    <Content Include="TourBooking.aspx" />
+    <Content Include="tours\nyc-patriotic-tours.htm" />
+    <Content Include="tours\vocabulary-builder-tour.htm" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Modules\modConst.vb" />
+    <Compile Include="App_Modules\modEmail.vb" />
+    <Compile Include="App_Modules\modMail.vb" />
+    <Compile Include="blog\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blog\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="blog\post-template.aspx.designer.vb">
+      <DependentUpon>post-template.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blog\post-template.aspx.vb">
+      <DependentUpon>post-template.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TourBooking.aspx.designer.vb">
+      <DependentUpon>TourBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TourBooking.aspx.vb">
+      <DependentUpon>TourBooking.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-grid.rtl.css.map" />
+    <Content Include="css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="css\bootstrap-utilities.css.map" />
+    <Content Include="css\bootstrap-utilities.min.css.map" />
+    <Content Include="css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\bootstrap.rtl.css.map" />
+    <Content Include="css\bootstrap.rtl.min.css.map" />
+    <Content Include="docs\24 Hours in NYC.pdf" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="font-awesome-4.7.0\less\animated.less" />
+    <Content Include="font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="font-awesome-4.7.0\less\core.less" />
+    <Content Include="font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="font-awesome-4.7.0\less\icons.less" />
+    <Content Include="font-awesome-4.7.0\less\larger.less" />
+    <Content Include="font-awesome-4.7.0\less\list.less" />
+    <Content Include="font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="font-awesome-4.7.0\less\path.less" />
+    <Content Include="font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="font-awesome-4.7.0\less\variables.less" />
+    <Content Include="font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.esm.js.map" />
+    <Content Include="js\bootstrap.esm.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50191</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44367/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

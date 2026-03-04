@@ -1,0 +1,40 @@
+﻿
+/* For the actual entry/post */
+.pmBlogEntry { clear: both; margin: 10px 0 0 0; background-color: #F8F8F8; border-radius: 10px; padding: 10px; }
+
+.pmBlogEntry h1.title {font-weight: bold; color: #0099CC; float:left; margin-top:0; padding-top:0;}
+.pmBlogEntry h1.title a:link {text-decoration:none;}
+.pmBlogEntry h1.title a:hover { color: #FF9900; }
+
+.pmBlogEntry .dateAuthor { font-size: .80em; float: right; width: 200px; text-align: right; color: #999999; }
+.pmBlogEntry .contentWrapper {clear:both; margin-top:1.5em; overflow:hidden;}
+
+.pmBlogEntry a.moreLink { font-size: .7em; color: #FF9900; display:inline-block; margin-top:.5em;}
+.pmBlogEntry p {padding: .1em 0 .1em 0;}
+
+/* For the listings of entries */
+.pmBlogEntriesWrapper {}  /* surrounds whole list of entries */
+
+/* Page Navigation Links */
+.pmBlogPageNavigationWrapper {text-align:right; padding:5px; margin:5px 20px 5px 5px; font-size:.8em;}
+
+/* Archive Navigation */
+.blogArchiveNavWrapper {font-size:.85em; font-family:Verdana, Geneva, sans-serif;}
+.blogArchiveNavWrapper a:link, .blogArchiveNavWrapper a:visited {color:#666;}
+.blogArchiveNavWrapper a:hover {color:#09C; text-decoration:underline;}
+.blogArchiveNavWrapper ul.top {padding-left:0;}
+.blogArchiveNavWrapper ul {list-style-type:none; padding-left:15px;}
+.blogArchiveNavWrapper li {line-height:1.6em;}
+.blogArchiveNavWrapper li.yr a {text-decoration:none; font-weight:bold;}
+.blogArchiveNavWrapper li.mo a {text-decoration:none; font-weight:bold;}
+.blogArchiveNavWrapper li.post a:link {text-decoration:none; font-weight:normal;}
+.blogArchiveNavWrapper li.post a:hover {text-decoration:underline; }
+.blogArchiveNavWrapper li.post {margin-bottom:.7em; line-height:1.2em;}
+
+.blogArchiveNavWrapper li span.collapser {display:inline-block; width:11px; height:11px; margin-right:5px;}
+.blogArchiveNavWrapper li span.collapser.plus {background-image:url(/blog/plus.gif);}
+.blogArchiveNavWrapper li span.collapser.minus {background-image:url(/blog/minus.gif);}
+
+/* Social Media Button Bar */
+.pmBlogButtonBar {display:block; margin-left:30px; margin-top:5px; margin-bottom:30px;}
+.pmBlogButtonBar a.linkButton { text-decoration:none; display: inline-block; font-size: 10px; font-weight: bold; padding: 3px; font-family: Arial, Helvetica, sans-serif; color: #666; border: 1px solid #C0C0C0; background-color: #F5F5F5; border-radius: 3px; }
