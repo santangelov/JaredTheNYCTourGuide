@@ -1,4 +1,4 @@
-﻿&lt;%@ Page Language="vb" AutoEventWireup="false" CodeBehind="TourBooking.aspx.vb" Inherits="JaredTheNYCTourGuideCom.TourBooking1" %&gt;
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="TourBooking.aspx.vb" Inherits="JaredTheNYCTourGuideCom.TourBooking1" %>
 
 <!DOCTYPE html>
 
