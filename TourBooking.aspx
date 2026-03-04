@@ -9,7 +9,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=4.0, user-scalable=yes" name="viewport"/>
 <link href="https://jaredthenyctourguide.com/favicon.ico" rel="SHORTCUT ICON" type="image/x-icon"/>
-<link href="Styles/jared.css?ver=3.20" rel="stylesheet" type="text/css"/>
+<link href="Styles/jared.css?ver=3.21" rel="stylesheet" type="text/css"/>
 <link href="Styles/jquery.mmenu.all.css" rel="stylesheet" type="text/css"/>
 <link href="Styles/standardforms.css" rel="stylesheet" type="text/css"/>
 <script src="js/jquery-2.1.3.js" type="text/javascript"></script>

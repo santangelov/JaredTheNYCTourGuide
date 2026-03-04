@@ -27,7 +27,7 @@
       }
     }
     </script>
-    <link type="text/css" href="/Styles/jared.css?ver=3.20" rel="stylesheet" />
+    <link type="text/css" href="/Styles/jared.css?ver=3.21" rel="stylesheet" />
 	<link type="text/css" href="/Styles/jquery.mmenu.all.css" rel="stylesheet" />
     
 	<link type="text/css" href="/Styles/pmBlog.css" rel="stylesheet" />
