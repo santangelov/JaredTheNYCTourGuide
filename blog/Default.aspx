@@ -12,6 +12,21 @@
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=4.0 user-scalable=yes" />    
     <link rel="SHORTCUT ICON" href="https://jaredthenyctourguide.com/favicon.ico"  type="image/x-icon"/>
+    <meta name="description" content="Read the official Jared The NYC Tour Guide blog for New York City history, tour updates, and local stories from the streets of NYC." />
+    <link rel="canonical" href="https://jaredthenyctourguide.com/blog" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Jared The NYC Tour Guide Blog",
+      "url": "https://jaredthenyctourguide.com/blog",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Jared The NYC Tour Guide",
+        "url": "https://jaredthenyctourguide.com/"
+      }
+    }
+    </script>
     <link type="text/css" href="/Styles/jared.css?ver=3.20" rel="stylesheet" />
 	<link type="text/css" href="/Styles/jquery.mmenu.all.css" rel="stylesheet" />
     
