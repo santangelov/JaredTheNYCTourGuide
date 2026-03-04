@@ -36,11 +36,12 @@
     <script type='application/ld+json'>
 
         {
-            "@context": "http://www.schema.org",
+            "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "@id": "https://www.jaredthenyctourguide.com",
-            "name": "Jared The NYC Tour Guide®",
-            "url": "https://jaredthenyctourguide.com",
+            "@id": "https://jaredthenyctourguide.com/#localbusiness",
+            "parentOrganization": {"@id": "https://jaredthenyctourguide.com/#organization"},
+            "name": "Jared The NYC Tour Guide",
+            "url": "https://jaredthenyctourguide.com/",
             "logo": "https://jaredthenyctourguide.com/images/JaredLogo.jpg",
             "description": "I provide walking, bus, and private group tours of New York City. Ranked in the top 40 tours in NYC and top 10% Things to Do Worldwide on TripAdvisor. All tours are custom-built to meet your and your group’s needs — simple and stress-free.",
             "telephone": "+1-917-533-1057",
@@ -82,6 +83,27 @@
         })();
 
     </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://jaredthenyctourguide.com/#organization",
+  "name": "Jared The NYC Tour Guide",
+  "url": "https://jaredthenyctourguide.com/",
+  "logo": "https://jaredthenyctourguide.com/images/JaredLogo.jpg",
+  "telephone": "+1-917-533-1057",
+  "email": "tours@JaredTheNYCTourGuide.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://jaredthenyctourguide.com/"}
+  ]
+}
+</script>
 </head>
 
 <body>

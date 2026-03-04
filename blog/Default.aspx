@@ -20,11 +20,7 @@
       "@type": "Blog",
       "name": "Jared The NYC Tour Guide Blog",
       "url": "https://jaredthenyctourguide.com/blog",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Jared The NYC Tour Guide",
-        "url": "https://jaredthenyctourguide.com/"
-      }
+      "publisher": {"@id": "https://jaredthenyctourguide.com/#organization"}
     }
     </script>
     <link type="text/css" href="/Styles/jared.css?ver=3.21" rel="stylesheet" />
@@ -41,6 +37,28 @@
 	        $("#menu").mmenu({});
 	    });
     </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://jaredthenyctourguide.com/#organization",
+  "name": "Jared The NYC Tour Guide",
+  "url": "https://jaredthenyctourguide.com/",
+  "logo": "https://jaredthenyctourguide.com/images/JaredLogo.jpg",
+  "telephone": "+1-917-533-1057",
+  "email": "tours@JaredTheNYCTourGuide.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://jaredthenyctourguide.com/"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://jaredthenyctourguide.com/blog"}
+  ]
+}
+</script>
 </head>
 
 <body>
