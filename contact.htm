@@ -16,11 +16,12 @@
 	
  <script type='application/ld+json'> 
 {
-  "@context": "http://www.schema.org",
+  "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "www.jaredthenyctourguide.com/contact",
+  "parentOrganization": {"@id": "https://jaredthenyctourguide.com/#organization"},
+  "@id": "https://jaredthenyctourguide.com/contact.htm#localbusiness",
   "name": "Contact Jared The NYC Tour Guide<sup>&reg;</sup>",
-  "url": "https://jaredthenyctourguide.com",
+  "url": "https://jaredthenyctourguide.com/",
   "logo": "https://jaredthenyctourguide.com/images/JaredLogo.jpg",
   "description": "I provide walking tours, bus or coach tours, private and group tours of New York City. All Jared The NYC Tour Guide<sup>&reg;</sup>tours are custom built for you, the client. My goal is to make it a simple process that meets all of your, and your groups, needs.",
   "telephone": "+1-917-533-1057",
@@ -84,6 +85,28 @@
 
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://jaredthenyctourguide.com/#organization",
+  "name": "Jared The NYC Tour Guide",
+  "url": "https://jaredthenyctourguide.com/",
+  "logo": "https://jaredthenyctourguide.com/images/JaredLogo.jpg",
+  "telephone": "+1-917-533-1057",
+  "email": "tours@JaredTheNYCTourGuide.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://jaredthenyctourguide.com/"},
+    {"@type":"ListItem","position":2,"name":"Contact","item":"https://jaredthenyctourguide.com/contact.htm"}
+  ]
+}
+</script>
 </head>
 
 <body>
