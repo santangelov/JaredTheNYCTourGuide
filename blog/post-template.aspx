@@ -11,7 +11,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=4.0 user-scalable=yes" />    
-    <link rel="SHORTCUT ICON" href="https://jaredthenyctourguide.com/favicon.ico"  type="image/x-icon"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <meta name="description" content="Read NYC stories, history insights, and tour notes from Jared The NYC Tour Guide blog." />
     <link rel="canonical" href="<%= Request.Url.GetLeftPart(UriPartial.Path).ToLowerInvariant() %>" />
     <script type="application/ld+json">

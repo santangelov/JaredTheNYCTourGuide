@@ -150,6 +150,7 @@
     <Content Include="custom_Tours.htm" />
     <Content Include="destinations.htm" />
     <Content Include="faqs.htm" />
+    <Content Include="favicon-32.png" />
     <Content Include="favicon.ico" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />

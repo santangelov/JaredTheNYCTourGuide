@@ -8,7 +8,7 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=4.0, user-scalable=yes" name="viewport"/>
-<link href="https://jaredthenyctourguide.com/favicon.ico" rel="SHORTCUT ICON" type="image/x-icon"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link href="Styles/jared.css?ver=3.21" rel="stylesheet" type="text/css"/>
 <link href="Styles/jquery.mmenu.all.css" rel="stylesheet" type="text/css"/>
 <link href="Styles/standardforms.css" rel="stylesheet" type="text/css"/>
