@@ -388,6 +388,7 @@
     <Content Include="js_umd\_inc\affix.js" />
     <Content Include="js_umd\_inc\prefix.js" />
     <Content Include="Met_Museum_of_Art_Walking_Tour.htm" />
+    <Content Include="privacy.htm" />
     <Content Include="SantaClausNYCBirthDayTour.htm" />
     <Content Include="santa\index.htm" />
     <Content Include="scripts\jquery-1.4.1.min.js" />
@@ -420,6 +421,7 @@
     <Content Include="Styles\pmBlog.css" />
     <Content Include="Styles\standardforms.css" />
     <Content Include="Styles\testimonials-modern.css" />
+    <Content Include="terms.htm" />
     <Content Include="testimonials.htm" />
     <Content Include="TourBooking.aspx" />
     <Content Include="tours\nyc-patriotic-tours.htm" />
