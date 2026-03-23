@@ -236,10 +236,10 @@
     <Content Include="images\JaredHeadshot.jpg" />
     <Content Include="images\jaredicon.png" />
     <Content Include="images\JaredLogo.jpg" />
+    <Content Include="images\JaredOnTour.jpg" />
     <Content Include="images\jaredOnTour01.jpg" />
     <Content Include="images\jaredOnTour02.jpg" />
     <Content Include="images\jaredOnTour03.jpg" />
-    <Content Include="images\JaredOnTourr.jpg" />
     <Content Include="images\jaredPointing.jpg" />
     <Content Include="images\JaredTourGuide.jpg" />
     <Content Include="images\jaredWdollar.jpg" />

@@ -154,24 +154,32 @@
 
 
             <div class="column mobilefull">
-                <img src="images/JaredOnTourr.jpg" alt="Jared On a Walkikng Tour in NYC" width="450" height="300" border="0" />
+                <img src="images/JaredOnTour.jpg?ver=2026" alt="Jared On a Walking Tour in NYC holding the flag of New YOrk City" width="450" height="300" border="0" />
                 <p style="padding-top:10px;">
                     To inquire about a tour please use our <a href="tourBooking.aspx">Book Your Tour</a> form.
                 </p>
                 <p>
-                    For any other questions or general inquiries please email
-                    <script language="JavaScript">
-
-<!--
-                        document.write('<a href="mai')
-                        document.write('lto:tours')
-                        document.write('&#64;')
-                        document.write('JaredTheNYCTourGuide.com">tours')
-                        document.write('&#64;')
-                        document.write('JaredTheNYCTourGuide.com</A>')
-                        // -->
-                    </script>
+                    For any other questions or general inquiries please email 
+                    <a id="tour-email" href="#"></a>
+                    <noscript>
+                        <span>jared [at] jaredTheNYCTourGuide [dot] com</span>
+                    </noscript>
                 </p>
+
+                <script>
+                    (function () {
+                        var user = "jared";
+                        var host = "jaredTheNYCTourGuide.com";
+                        var email = user + "@" + host;
+
+                        var link = document.getElementById("tour-email");
+                        if (link) {
+                            link.href = "mailto:" + email;
+                            link.textContent = email;
+                        }
+                    })();
+                </script>
+
                 <p>Phone: (917) 533-1057</p>
                 <p><a href="http://www.facebook.com/jaredthetourguide" target="_blank"><img src="/images/facebook_32.gif" alt="facebook" /></a></p>
 
