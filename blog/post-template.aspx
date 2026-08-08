@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="post-template.aspx.vb" Inherits="PixelMarsalaCore.Blog.blog_post" %>
+<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="post-template.aspx.vb" Inherits="PixelMarsalaCore.Blog.blog_post" %>
 
 <%@ Register Src="~/App_UserControls/blogTitle.ascx" TagPrefix="uc1" TagName="blogTitle" %>
 <%@ Register Src="~/App_UserControls/blogPost.ascx" TagPrefix="uc1" TagName="blogPost" %>
@@ -6,20 +6,20 @@
 
 <!DOCTYPE html>
 <html xml:lang="en" lang="en">
-<head runat="server">
+<head>
     <title>Jared The NYC Tour Guide&reg; | Blog</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=4.0 user-scalable=yes" />    
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <meta name="description" content="Read NYC stories, history insights, and tour notes from Jared The NYC Tour Guide blog." />
-    <link rel="canonical" href="<%= Request.Url.GetLeftPart(UriPartial.Path).ToLowerInvariant() %>" />
+    <link rel="canonical" href="https://jaredthenyctourguide.com<%= Request.Url.AbsolutePath.ToLowerInvariant() %>" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "Jared The NYC Tour Guide Blog Post",
-      "mainEntityOfPage": "<%= Request.Url.GetLeftPart(UriPartial.Path).ToLowerInvariant() %>",
+      "mainEntityOfPage": "https://jaredthenyctourguide.com<%= Request.Url.AbsolutePath.ToLowerInvariant() %>",
       "author": {
         "@type": "Person",
         "name": "Jared Goldstein"
@@ -60,7 +60,7 @@
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Home","item":"https://jaredthenyctourguide.com/"},
     {"@type":"ListItem","position":2,"name":"Blog","item":"https://jaredthenyctourguide.com/blog"},
-    {"@type":"ListItem","position":3,"name":"Post","item":"<%= Request.Url.GetLeftPart(UriPartial.Path).ToLowerInvariant() %>"}
+    {"@type":"ListItem","position":3,"name":"Post","item":"https://jaredthenyctourguide.com<%= Request.Url.AbsolutePath.ToLowerInvariant() %>"}
   ]
 }
 </script>
@@ -95,7 +95,7 @@
       
       <!-- START SHAFT -->
       <div class="shaftWrapper">
-   		<h1><a href="/blog" style="color:#3C5830;"><uc1:blogTitle ID="blogTitle1" runat="server" BlogCode="jared"  /></a></h1>
+  		<h1><a href="/blog" style="color:#3C5830;"><uc1:blogTitle ID="blogTitle1" runat="server" BlogCode="jared"  /></a></h1>
           
           <div class="blogLeft">
             <uc1:blogPost ID="blogPost1" runat="server" VirtualPath="/#/VIRTUALPATH/#/" BlogCode="jared" />
