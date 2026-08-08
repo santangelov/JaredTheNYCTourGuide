@@ -1,4 +1,4 @@
-<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="post-template.aspx.vb" Inherits="PixelMarsalaCore.Blog.blog_post" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="post-template.aspx.vb" Inherits="PixelMarsalaCore.Blog.blog_post" %>
 
 <%@ Register Src="~/App_UserControls/blogTitle.ascx" TagPrefix="uc1" TagName="blogTitle" %>
 <%@ Register Src="~/App_UserControls/blogPost.ascx" TagPrefix="uc1" TagName="blogPost" %>
