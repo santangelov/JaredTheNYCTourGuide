@@ -95,7 +95,7 @@
       
       <!-- START SHAFT -->
       <div class="shaftWrapper">
-  		<h1><a href="/blog" style="color:#3C5830;"><uc1:blogTitle ID="blogTitle1" runat="server" BlogCode="jared"  /></a></h1>
+   		<h1><a href="/blog" style="color:#3C5830;"><uc1:blogTitle ID="blogTitle1" runat="server" BlogCode="jared"  /></a></h1>
           
           <div class="blogLeft">
             <uc1:blogPost ID="blogPost1" runat="server" VirtualPath="/#/VIRTUALPATH/#/" BlogCode="jared" />
