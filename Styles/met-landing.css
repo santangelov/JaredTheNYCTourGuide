@@ -1,0 +1,451 @@
+/* Met Museum landing page
+   Keep this page-specific CSS simple and independent from legacy page layouts. */
+
+html,
+body {
+    background: #fff;
+    background-image: none;
+}
+
+.metLandingPage {
+    background: #fff;
+    padding: 0 0 70px 0;
+    font-size: 1em;
+    line-height: 1.6;
+    overflow: visible;
+}
+
+.metLandingPage * {
+    box-sizing: border-box;
+}
+
+.metLandingPage h1,
+.metLandingPage h2,
+.metLandingPage h3 {
+    color: #315136;
+    line-height: 1.2;
+}
+
+.metLandingPage h2 {
+    font-size: 1.75em;
+    margin: 0 0 12px 0;
+}
+
+.metLandingPage h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.15em;
+}
+
+.metLandingPage p {
+    margin: 0 0 14px 0;
+}
+
+.metBreadcrumb {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 14px 24px 8px 24px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.metSection {
+    padding: 46px 24px;
+}
+
+.metSectionAlt {
+    background: #f5f7f4;
+}
+
+.metSectionWarm {
+    background: #fff8ef;
+}
+
+.metInner {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.metNarrow {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.metSectionIntro {
+    max-width: 820px;
+    margin-bottom: 24px !important;
+    font-size: 1.05em;
+    color: #333;
+}
+
+.metHero {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 34px;
+    align-items: center;
+    padding: 26px 24px 44px 24px;
+}
+
+.metHero h1 {
+    margin: 0 0 14px 0;
+    font-size: 2.35em;
+    color: #315136;
+}
+
+.metHeroLead {
+    font-size: 1.2em;
+    color: #303030;
+    margin-bottom: 18px !important;
+}
+
+.metHeroImage img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+}
+
+.metEyebrow {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #7b4a14;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.metTrustList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0;
+}
+
+.metTrustItem {
+    border: 1px solid #d7e0d5;
+    background: #f7faf6;
+    color: #315136;
+    border-radius: 999px;
+    padding: 7px 11px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.metCtas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.metButton {
+    display: inline-block;
+    padding: 11px 17px;
+    border-radius: 7px;
+    text-decoration: none !important;
+    font-weight: bold;
+    border: 1px solid #315136;
+}
+
+.metButtonPrimary:link,
+.metButtonPrimary:visited {
+    background: #315136;
+    color: #fff;
+}
+
+.metButtonSecondary:link,
+.metButtonSecondary:visited {
+    background: #fff;
+    color: #315136;
+}
+
+.metButton:hover {
+    opacity: 0.9;
+}
+
+.metTwoColumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: center;
+}
+
+.metTwoColumn img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.metChecklist {
+    margin: 12px 0 0 20px;
+    padding: 0;
+}
+
+.metChecklist li {
+    margin: 8px 0;
+}
+
+.metCardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.metCard {
+    border: 1px solid #dfe4dd;
+    border-radius: 12px;
+    padding: 18px;
+    background: #fff;
+}
+
+.metCard p:last-child {
+    margin-bottom: 0;
+}
+
+.metCardLink {
+    font-weight: bold;
+}
+
+.metFeatureGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.metFeatureCard {
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.metFeatureCard img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.metFeatureBody {
+    padding: 18px;
+}
+
+.metFeatureBody p:last-child {
+    margin-bottom: 0;
+}
+
+.metSmallNote {
+    font-size: 0.88em;
+    color: #666;
+}
+
+.metOdyssey {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 28px;
+    align-items: center;
+}
+
+.metOdysseyImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.metOdysseyImages img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.metOdysseyImages img:first-child {
+    grid-column: 1 / -1;
+    height: 280px;
+}
+
+.metDiscoverGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.metDiscoverCard {
+    background: #fff;
+    border: 1px solid #e1e4df;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.metDiscoverCard img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+.metDiscoverCard div {
+    padding: 13px;
+}
+
+.metProofGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.metProofBox {
+    border-left: 4px solid #5A7E50;
+    padding: 4px 0 4px 18px;
+}
+
+.metFacts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.metFact {
+    background: #f7f8f6;
+    border: 1px solid #e1e4df;
+    border-radius: 9px;
+    padding: 13px;
+}
+
+.metFaq {
+    margin-top: 24px;
+}
+
+.metFaq details {
+    border-top: 1px solid #dfe2dc;
+    padding: 13px 0;
+}
+
+.metFaq details:last-child {
+    border-bottom: 1px solid #dfe2dc;
+}
+
+.metFaq summary {
+    cursor: pointer;
+    color: #315136;
+    font-weight: bold;
+}
+
+.metFaq details p {
+    margin: 10px 0 2px 0;
+}
+
+.metFinalCta {
+    text-align: center;
+    background: #315136;
+    color: #fff;
+    border-radius: 14px;
+    padding: 30px 24px;
+}
+
+.metFinalCta h2 {
+    color: #fff;
+}
+
+.metFinalCta a:not(.metButton) {
+    color: #ffdf7f;
+}
+
+.metFinalCta .metButtonPrimary:link,
+.metFinalCta .metButtonPrimary:visited {
+    background: #fff;
+    color: #315136;
+    border-color: #fff;
+}
+
+@media screen and (min-width: 950px) {
+    .metLandingWrapper.bodyWrapper {
+        width: 100%;
+        max-width: none;
+    }
+
+    .metLandingWrapper .bannerWrapper,
+    .metLandingWrapper .menuWrapper,
+    .metLandingWrapper .footerWrapper {
+        width: 950px;
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .metLandingWrapper .menuWrapper {
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .metHero,
+    .metTwoColumn,
+    .metOdyssey,
+    .metProofGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .metCardGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .metDiscoverGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .metSection {
+        padding: 34px 18px;
+    }
+
+    .metBreadcrumb,
+    .metHero {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .metHero {
+        padding-top: 18px;
+        padding-bottom: 34px;
+        gap: 22px;
+    }
+
+    .metHero h1 {
+        font-size: 1.85em;
+    }
+
+    .metLandingPage h2 {
+        font-size: 1.45em;
+    }
+
+    .metCardGrid,
+    .metFeatureGrid,
+    .metDiscoverGrid,
+    .metFacts {
+        grid-template-columns: 1fr;
+    }
+
+    .metFeatureCard img,
+    .metDiscoverCard img {
+        height: auto;
+    }
+
+    .metOdysseyImages img,
+    .metOdysseyImages img:first-child {
+        height: auto;
+    }
+
+    .metCtas {
+        align-items: stretch;
+    }
+
+    .metButton {
+        width: 100%;
+        text-align: center;
+    }
+}
