@@ -252,6 +252,54 @@ body {
     font-weight: bold;
 }
 
+/* CANDID PHOTO BREAK */
+.metPhotoBreak {
+    padding: 10px 24px 58px 24px;
+    background: #fff;
+}
+
+.metPhotoStrip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.metPhotoCard {
+    margin: 0;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #dde3da;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(49,81,54,0.09);
+}
+
+.metPhotoCard img {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    display: block;
+}
+
+.metPhotoCardReview img {
+    object-fit: contain;
+    background: #f7f7f5;
+}
+
+.metPhotoCard figcaption {
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 13px 15px;
+    color: #315136;
+    font-weight: bold;
+    line-height: 1.35;
+    border-top: 4px solid #c96812;
+}
+
+.metPhotoCard:nth-child(2) figcaption {
+    border-top-color: #64875b;
+}
+
 .metFeatureGrid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -322,8 +370,8 @@ body {
 /* SELECTED HIGHLIGHTS */
 .metDiscoverGrid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
 }
 
 .metDiscoverCard {
@@ -336,13 +384,13 @@ body {
 
 .metDiscoverCard img {
     width: 100%;
-    height: 175px;
+    height: 205px;
     object-fit: cover;
     display: block;
 }
 
 .metDiscoverCard div {
-    padding: 14px;
+    padding: 15px;
     font-size: 1em;
 }
 
@@ -351,20 +399,85 @@ body {
     font-size: 1.08em;
 }
 
-/* PROOF / FAQ */
-.metProofGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+/* REVIEW INSIGHTS */
+.metReviewsSection {
+    background: #fff8ef;
+    border-top: 1px solid #f0ddc6;
+    border-bottom: 1px solid #f0ddc6;
 }
 
-.metProofBox {
+.metReviewScroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(275px, 31%);
+    gap: 15px;
+    overflow-x: auto;
+    padding: 5px 2px 17px 2px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+}
+
+.metReviewCard {
+    scroll-snap-align: start;
+    border: 1px solid #ddd8cf;
+    border-radius: 14px;
+    padding: 21px;
+    min-height: 225px;
+    box-shadow: 0 7px 18px rgba(49,81,54,0.07);
+}
+
+.metReviewCard h3 {
+    font-size: 1.28em;
+    margin-top: 8px;
+}
+
+.metReviewCard p {
+    margin-bottom: 0;
+    line-height: 1.55;
+}
+
+.metReviewGreen {
+    background: #edf5e9;
+    border-top: 5px solid #64875b;
+}
+
+.metReviewOrange {
+    background: #fff0df;
+    border-top: 5px solid #c96812;
+}
+
+.metReviewCream {
     background: #fff;
-    border: 1px solid #d9e2d6;
-    border-left: 6px solid #c96812;
-    border-radius: 10px;
-    padding: 20px 22px;
-    box-shadow: 0 5px 14px rgba(49,81,54,0.06);
+    border-top: 5px solid #d4aa72;
+}
+
+.metReviewIcon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #315136;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.metReviewOrange .metReviewIcon {
+    background: #b85c00;
+}
+
+.metScrollHint {
+    margin-top: 2px !important;
+    font-size: 0.9em;
+    color: #6d5a46;
+    font-weight: bold;
+}
+
+/* PRACTICAL / FAQ */
+.metPractical .metFacts {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .metFacts {
@@ -475,8 +588,7 @@ body {
 @media screen and (max-width: 900px) {
     .metHero,
     .metTwoColumn,
-    .metOdyssey,
-    .metProofGrid {
+    .metOdyssey {
         grid-template-columns: 1fr;
     }
 
@@ -494,6 +606,14 @@ body {
 
     .metDiscoverGrid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .metPractical .metFacts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .metReviewScroller {
+        grid-auto-columns: minmax(270px, 46%);
     }
 }
 
@@ -541,8 +661,32 @@ body {
     .metCardGrid,
     .metFeatureGrid,
     .metDiscoverGrid,
-    .metFacts {
+    .metFacts,
+    .metPractical .metFacts {
         grid-template-columns: 1fr;
+    }
+
+    .metPhotoBreak {
+        padding: 8px 0 42px 0;
+    }
+
+    .metPhotoStrip {
+        display: grid;
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: 82%;
+        gap: 13px;
+        overflow-x: auto;
+        padding: 0 18px 14px 18px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .metPhotoCard {
+        scroll-snap-align: start;
+    }
+
+    .metPhotoCard img {
+        height: 230px;
     }
 
     .metFeatureCard img,
@@ -553,6 +697,15 @@ body {
     .metOdysseyImages img,
     .metOdysseyImages img:first-child {
         height: auto;
+    }
+
+    .metReviewScroller {
+        grid-auto-columns: 82%;
+        margin-right: -18px;
+    }
+
+    .metReviewCard {
+        min-height: 0;
     }
 
     .metCtas {
