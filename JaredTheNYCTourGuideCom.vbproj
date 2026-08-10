@@ -425,6 +425,7 @@
     <Content Include="Styles\extensions\jquery.mmenu.themes.css" />
     <Content Include="Styles\extensions\jquery.mmenu.widescreen.css" />
     <Content Include="Styles\jared.css" />
+    <Content Include="Styles\landing.css" />
     <Content Include="Styles\jquery.mmenu.all.css" />
     <Content Include="Styles\jquery.mmenu.css" />
     <Content Include="Styles\jquery.mmenu.oncanvas.css" />
