@@ -78,11 +78,9 @@ body {
     font-weight: 700;
 }
 
-/* One restrained secondary heading color gives the page rhythm
-   without adding another structural accent color. */
 .metLandingPage h3 {
     margin: 0 0 9px 0;
-    color: #765047;
+    color: #315136;
     font-size: 1.28em;
     font-weight: 650;
 }
@@ -148,12 +146,13 @@ body {
     color: #4a4e4b;
 }
 
+/* Playful but restrained accent: teal appears only in small eyebrow labels. */
 .metEyebrow {
     display: inline-block;
     position: relative;
     margin-bottom: 12px;
     padding-left: 16px;
-    color: #647767;
+    color: #2f7f8d;
     font-size: 0.76em;
     line-height: 1.2;
     font-weight: 700;
@@ -169,18 +168,18 @@ body {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #91a292;
+    background: #2f7f8d;
 }
 
 /* ---------------------------------------------------------
    HERO - editorial rather than boxed
    --------------------------------------------------------- */
 .metHero {
-    max-width: 1120px;
+    max-width: 1240px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.03fr 0.97fr;
-    gap: 54px;
+    grid-template-columns: 0.96fr 1.04fr;
+    gap: 48px;
     align-items: center;
     padding: 48px 24px 78px 24px;
 }
@@ -276,6 +275,37 @@ body {
 
 .metButton:hover {
     opacity: 0.9;
+}
+
+/* Keep the hero actions on one clean line at desktop widths.
+   The second action behaves more like a text link than a second button. */
+.metHero .metCtas {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.metHero .metButtonPrimary {
+    white-space: nowrap;
+}
+
+.metHero .metButtonSecondary:link,
+.metHero .metButtonSecondary:visited {
+    padding: 10px 2px;
+    border: 0;
+    border-bottom: 1px solid #a9b8ac;
+    border-radius: 0;
+    color: #315136;
+    white-space: nowrap;
+}
+
+.metHero .metButtonSecondary::after {
+    content: " \2192";
+}
+
+.metHero .metButtonSecondary:hover {
+    border-bottom-color: #315136;
+    opacity: 1;
 }
 
 .metHeroVisual {
@@ -796,7 +826,7 @@ body {
 }
 
 .metRelatedCard h3 a {
-    color: #765047 !important;
+    color: #315136 !important;
     text-decoration: none !important;
 }
 
@@ -909,6 +939,10 @@ body {
 
     .metHeroQuote {
         margin-left: -12px;
+    }
+
+    .metHero .metCtas {
+        flex-wrap: wrap;
     }
 
     .metCardGrid,
@@ -1067,13 +1101,24 @@ body {
         min-height: 0;
     }
 
-    .metCtas {
+    .metCtas,
+    .metHero .metCtas {
         align-items: stretch;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
-    .metButton {
+    .metButton,
+    .metHero .metButtonSecondary {
         width: 100%;
         text-align: center;
+    }
+
+    .metHero .metButtonSecondary:link,
+    .metHero .metButtonSecondary:visited {
+        padding: 11px 16px;
+        border: 1px solid #9ead9f;
+        border-radius: 7px;
     }
 
     .metRelatedImage img {
