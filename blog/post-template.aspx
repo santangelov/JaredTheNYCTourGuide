@@ -4,6 +4,16 @@
 <%@ Register Src="~/App_UserControls/blogPost.ascx" TagPrefix="uc1" TagName="blogPost" %>
 <%@ Register Src="~/App_UserControls/blogArchiveNav.ascx" TagPrefix="uc1" TagName="blogArchiveNav" %>
 
+<script runat="server">
+    Protected Sub SetSeoCanonicalOnPreRender(ByVal sender As Object, ByVal e As EventArgs) Handles Me.PreRender
+        Dim canonical As System.Web.UI.HtmlControls.HtmlLink = TryCast(Page.Header.FindControl("canonicalLink"), System.Web.UI.HtmlControls.HtmlLink)
+
+        If canonical IsNot Nothing Then
+            canonical.Href = "https://jaredthenyctourguide.com" & Request.Url.AbsolutePath.ToLowerInvariant()
+        End If
+    End Sub
+</script>
+
 <!DOCTYPE html>
 <html xml:lang="en" lang="en">
 <head runat="server">
@@ -13,13 +23,12 @@
 	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=4.0 user-scalable=yes" />    
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <meta name="description" content="Read NYC stories, history insights, and tour notes from Jared The NYC Tour Guide blog." />
-    <link rel="canonical" href="<%= Request.Url.GetLeftPart(UriPartial.Path).ToLowerInvariant() %>" />
+    <link id="canonicalLink" rel="canonical" runat="server" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "Jared The NYC Tour Guide Blog Post",
-      "mainEntityOfPage": "<%= Request.Url.GetLeftPart(UriPartial.Path).ToLowerInvariant() %>",
       "author": {
         "@type": "Person",
         "name": "Jared Goldstein"
@@ -60,7 +69,7 @@
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Home","item":"https://jaredthenyctourguide.com/"},
     {"@type":"ListItem","position":2,"name":"Blog","item":"https://jaredthenyctourguide.com/blog"},
-    {"@type":"ListItem","position":3,"name":"Post","item":"<%= Request.Url.GetLeftPart(UriPartial.Path).ToLowerInvariant() %>"}
+    {"@type":"ListItem","position":3,"name":"Post"}
   ]
 }
 </script>
