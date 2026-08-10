@@ -13,12 +13,140 @@
     <link type="text/css" href="Styles/met-landing.css?ver=1.3" rel="stylesheet" />
     <link type="text/css" href="Styles/jquery.mmenu.all.css" rel="stylesheet" />
 
+    <style type="text/css">
+        /* Final Met landing-page polish: book covers and review scroller controls. */
+        .metBookVisual {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 0;
+        }
+
+        .metBookCoverWrap {
+            width: 100%;
+            max-width: 340px;
+            min-height: 430px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            border: 1px solid #dbe2dd;
+            border-radius: 12px;
+            background: linear-gradient(180deg, #f6f8f7 0%, #edf2ef 100%);
+        }
+
+        .metFeatureCard .metBookCover {
+            width: auto;
+            max-width: 240px;
+            height: 340px;
+            object-fit: contain;
+            display: block;
+            border-radius: 5px;
+            box-shadow: 0 14px 28px rgba(44, 63, 49, 0.18);
+        }
+
+        .metBookCredit {
+            margin: 10px 0 0 0 !important;
+            color: #76807a;
+            font-size: 0.78em;
+            line-height: 1.35;
+            text-align: center;
+        }
+
+        .metFeatureCard:nth-child(even) .metBookVisual {
+            order: 2;
+        }
+
+        .metReviewScrollerWrap {
+            position: relative;
+            margin-top: 4px;
+        }
+
+        .metReviewScrollerWrap .metReviewScroller {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        .metReviewScrollerWrap .metReviewArrow {
+            position: absolute;
+            top: 50%;
+            z-index: 4;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            transform: translateY(-50%);
+            border: 1px solid #bdd4d7;
+            border-radius: 50%;
+            background: #fff;
+            color: #2f7f8d;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+            font-size: 1.35em;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .metReviewArrowLeft {
+            left: -22px;
+        }
+
+        .metReviewArrowRight {
+            right: -22px;
+        }
+
+        .metReviewScrollerWrap .metReviewArrow:hover,
+        .metReviewScrollerWrap .metReviewArrow:focus {
+            background: #eaf4f5;
+            border-color: #2f7f8d;
+            outline: none;
+        }
+
+        @media screen and (max-width: 900px) {
+            .metReviewArrowLeft {
+                left: -12px;
+            }
+
+            .metReviewArrowRight {
+                right: -12px;
+            }
+        }
+
+        @media screen and (max-width: 620px) {
+            .metFeatureCard:nth-child(even) .metBookVisual {
+                order: initial;
+            }
+
+            .metBookCoverWrap {
+                min-height: 0;
+                padding: 20px;
+            }
+
+            .metFeatureCard .metBookCover {
+                width: auto;
+                max-width: min(220px, 72vw);
+                height: auto;
+                max-height: 330px;
+            }
+
+            .metReviewScrollerWrap .metReviewArrow {
+                display: none;
+            }
+        }
+    </style>
+
     <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
     <script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
     <script type="text/javascript">
         $(function () {
             $("#menu").mmenu({});
         });
+
+        function scrollMetReviews(amount) {
+            var scroller = document.getElementById('metReviewScroller');
+            if (scroller) {
+                scroller.scrollBy({ left: amount, behavior: 'smooth' });
+            }
+        }
     </script>
 
     <script type="application/ld+json">
@@ -209,7 +337,12 @@
 
                     <div class="metFeatureGrid">
                         <article class="metFeatureCard">
-                            <img src="images/Met_Museum/Met-Museum-with-kids.jpg" alt="Children exploring the Metropolitan Museum of Art with Jared" />
+                            <div class="metBookVisual">
+                                <div class="metBookCoverWrap">
+                                    <img class="metBookCover" src="images/Met_Museum/Book-Mixed-Up-Files.jpg" alt="Book cover of From the Mixed-Up Files of Mrs. Basil E. Frankweiler" />
+                                </div>
+                                <p class="metBookCredit">Book cover image via Simon &amp; Schuster</p>
+                            </div>
                             <div class="metFeatureBody">
                                 <span class="metFeatureKicker">A Classic Met Adventure</span>
                                 <h3><em>From the Mixed-Up Files of Mrs. Basil E. Frankweiler</em></h3>
@@ -220,7 +353,12 @@
                         </article>
 
                         <article class="metFeatureCard">
-                            <img src="images/Met_Museum/Grand Column at Met Museum.jpg" alt="Greek and Roman art displayed at the Metropolitan Museum of Art" />
+                            <div class="metBookVisual">
+                                <div class="metBookCoverWrap">
+                                    <img class="metBookCover" src="images/Met_Museum/Book-Lightning-Thief.jpg" alt="Book cover of The Lightning Thief by Rick Riordan" />
+                                </div>
+                                <p class="metBookCredit">Book cover image via Rick Riordan official press materials</p>
+                            </div>
                             <div class="metFeatureBody">
                                 <span class="metFeatureKicker">Rick Riordan &amp; Mythology</span>
                                 <h3>Percy Jackson, Greek Mythology &amp; the Met</h3>
@@ -299,10 +437,6 @@
                             <span class="metEyebrow">What Guests Consistently Say</span>
                             <h2>Why People Like Touring the Met with Jared</h2>
                         </div>
-                        <div class="metReviewNav" aria-label="Review theme navigation">
-                            <button class="metReviewArrow" type="button" aria-label="Scroll review themes left" onclick="document.getElementById('metReviewScroller').scrollBy({left:-360,behavior:'smooth'});">&#8592;</button>
-                            <button class="metReviewArrow" type="button" aria-label="Scroll review themes right" onclick="document.getElementById('metReviewScroller').scrollBy({left:360,behavior:'smooth'});">&#8594;</button>
-                        </div>
                     </div>
                     <p class="metSectionIntro">The same strengths show up again and again in Jared's reviews across different platforms and different kinds of guests.</p>
 
@@ -311,7 +445,10 @@
                         <cite>&mdash; C.B., Met Tour, June 2025</cite>
                     </blockquote>
 
-                    <div id="metReviewScroller" class="metReviewScroller" aria-label="Recurring themes in Jared's tour reviews">
+                    <div class="metReviewScrollerWrap">
+                        <button class="metReviewArrow metReviewArrowLeft" type="button" aria-label="Scroll review themes left" onclick="scrollMetReviews(-360);">&#8592;</button>
+
+                        <div id="metReviewScroller" class="metReviewScroller" aria-label="Recurring themes in Jared's tour reviews">
                         <article class="metReviewCard">
                             <span class="metReviewIcon" aria-hidden="true">&#10003;</span>
                             <h3>Deep Knowledge</h3>
@@ -347,8 +484,11 @@
                             <h3>Uses Your Time Well</h3>
                             <p>Planning, pacing, routing and practical help are part of the value, especially when visitors have limited time and a long wish list.</p>
                         </article>
+                        </div>
+
+                        <button class="metReviewArrow metReviewArrowRight" type="button" aria-label="Scroll review themes right" onclick="scrollMetReviews(360);">&#8594;</button>
                     </div>
-                    <p class="metReviewNote">The cards above summarize recurring review patterns; they are not presented as direct quotations. Swipe directly on touch screens.</p>
+                    <p class="metReviewNote">The cards above summarize recurring review patterns; they are not presented as direct quotations. Use the arrows on desktop or swipe directly on touch screens.</p>
                     <p><a href="testimonials.htm#individuals"><strong>Read Jared's tour reviews</strong></a></p>
                 </div>
             </section>
