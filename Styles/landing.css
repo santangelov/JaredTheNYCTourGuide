@@ -1,0 +1,1308 @@
+/* Shared tour landing-page styles.
+   Reusable landing-page patterns are prefixed with landing-. Met-only patterns retain met-. */
+
+html,
+body {
+    background: #fff;
+    background-image: none;
+}
+
+/* ---------------------------------------------------------
+   HEADER / PAGE TRANSITION
+   --------------------------------------------------------- */
+.landingWrapper .bannerWrapper {
+    position: relative;
+    background: transparent;
+}
+
+.landingWrapper .bannerWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: radial-gradient(ellipse 62% 115% at 76% 48%, #dfe6e1 0%, #e9eeea 34%, #f4f6f4 54%, rgba(255,255,255,0) 77%), #fff;
+    z-index: 0;
+}
+
+.landingWrapper .bannerWrapper a {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.landingWrapper .menuWrapper {
+    background: #fff;
+}
+
+.landingHeaderDivider {
+    width: 100%;
+    height: 2px;
+    background: #e0e4e1;
+    box-shadow: none;
+}
+
+/* ---------------------------------------------------------
+   GENERAL LANDING PAGE TYPOGRAPHY / LINKS
+   --------------------------------------------------------- */
+.landingPage {
+    background: #fff;
+    padding: 0 0 72px 0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 1.08em;
+    line-height: 1.68;
+    color: #2d302e;
+    overflow: visible;
+}
+
+.landingPage * {
+    box-sizing: border-box;
+}
+
+.landingPage h1,
+.landingPage h2,
+.landingPage h3 {
+    color: #2f5035;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.landingPage h2 {
+    font-size: 2.15em;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+.landingPage h3 {
+    margin: 0 0 9px 0;
+    color: #315136;
+    font-size: 1.28em;
+    font-weight: 650;
+}
+
+.landingPage p {
+    margin: 0 0 16px 0;
+}
+
+.landingPage a:not(.landingButton) {
+    color: #3d6746;
+    text-decoration-color: #9bad9e;
+    text-underline-offset: 3px;
+}
+
+.landingPage a:not(.landingButton):hover {
+    color: #27472e;
+}
+
+/* Align the breadcrumb with the wider hero rather than the narrower body sections. */
+.landingBreadcrumb {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 18px 24px 4px 24px;
+    font-size: 0.86em;
+    color: #727572;
+}
+
+.landingBreadcrumb span {
+    color: #a2a7a3;
+    padding: 0 3px;
+}
+
+.landingSection {
+    padding: 58px 24px;
+}
+
+.landingSectionAlt {
+    background: #f1f4f1;
+    border-top: 1px solid #e2e7e2;
+    border-bottom: 1px solid #e2e7e2;
+}
+
+.landingSectionWarm {
+    background: #f7f8f6;
+    border-top: 1px solid #e6eae6;
+    border-bottom: 1px solid #e6eae6;
+}
+
+.landingInner {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.landingSectionIntro {
+    max-width: 850px;
+    margin-bottom: 30px !important;
+    font-size: 1.18em;
+    line-height: 1.58;
+    color: #4a4e4b;
+}
+
+/* Playful but restrained accent: teal appears only in small labels/icons. */
+.landingEyebrow {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 16px;
+    color: #2f7f8d;
+    font-size: 0.76em;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.landingEyebrow::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #2f7f8d;
+}
+
+/* ---------------------------------------------------------
+   HERO
+   --------------------------------------------------------- */
+.landingHero {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.96fr 1.04fr;
+    gap: 48px;
+    align-items: center;
+    padding: 36px 24px 55px 24px;
+}
+
+.landingHeroCopy {
+    padding-right: 4px;
+}
+
+.landingHero h1 {
+    margin: 0 0 18px 0;
+    max-width: 720px;
+    font-family: Constantia, "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 3.28em;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    color: #29482f;
+}
+
+.landingHeroLead {
+    max-width: 720px;
+    font-size: 1.32em;
+    line-height: 1.5;
+    color: #333735;
+    margin-bottom: 22px !important;
+}
+
+.landingHeroBio {
+    max-width: 720px;
+    color: #515552;
+    font-size: 1.01em;
+}
+
+/* Credentials read as small modern badges rather than another line of body copy. */
+.landingTrustList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 21px 0 23px 0;
+}
+
+.landingTrustItem {
+    position: relative;
+    display: inline-block;
+    padding: 7px 11px 7px 24px;
+    color: #315136;
+    background: #f7fbfa;
+    border: 1px solid #d2dfdc;
+    border-radius: 999px;
+    font-size: 0.86em;
+    line-height: 1.2;
+    font-weight: 650;
+}
+
+.landingTrustItem::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    margin-top: -2.5px;
+    border-radius: 50%;
+    background: #2f7f8d;
+}
+
+.landingCtas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin-top: 25px;
+}
+
+.landingCtasCentered {
+    justify-content: center;
+}
+
+.landingButton {
+    display: inline-block;
+    padding: 12px 19px;
+    border-radius: 7px;
+    text-decoration: none !important;
+    font-weight: 650;
+    border: 1px solid #315136;
+}
+
+.landingButtonPrimary:link,
+.landingButtonPrimary:visited {
+    background: #315136;
+    border-color: #315136;
+    color: #fff;
+}
+
+.landingButtonSecondary:link,
+.landingButtonSecondary:visited {
+    background: transparent;
+    color: #315136;
+    border-color: #9ead9f;
+}
+
+.landingButton:hover {
+    opacity: 0.9;
+}
+
+.landingHero .landingCtas {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.landingHero .landingButtonPrimary {
+    white-space: nowrap;
+}
+
+.landingHero .landingButtonSecondary:link,
+.landingHero .landingButtonSecondary:visited {
+    padding: 10px 2px;
+    border: 0;
+    border-bottom: 1px solid #a9b8ac;
+    border-radius: 0;
+    color: #315136;
+    white-space: nowrap;
+}
+
+.landingHero .landingButtonSecondary::after {
+    content: " \2192";
+}
+
+.landingHero .landingButtonSecondary:hover {
+    border-bottom-color: #315136;
+    opacity: 1;
+}
+
+.landingHeroVisual {
+    position: relative;
+    padding: 14px 8px 0 18px;
+}
+
+.landingHeroVisual::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: -20px;
+    bottom: 36px;
+    left: 42px;
+    border-radius: 10px;
+    background: #e8ede8;
+    z-index: 0;
+}
+
+.landingHeroImage {
+    position: relative;
+    z-index: 1;
+}
+
+.landingHeroImage img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 14px 28px rgba(44, 63, 49, 0.13);
+}
+
+.landingHeroQuote {
+    position: relative;
+    z-index: 2;
+    width: 82%;
+    margin: -28px 0 0 -26px;
+    padding: 15px 18px;
+    background: #fff;
+    border-left: 3px solid #96a697;
+    box-shadow: 0 8px 20px rgba(44, 63, 49, 0.10);
+}
+
+.landingHeroQuote p {
+    margin: 0 0 5px 0;
+    color: #334438;
+    font-size: 0.93em;
+    line-height: 1.45;
+    font-weight: 600;
+}
+
+.landingHeroQuote cite {
+    color: #757975;
+    font-size: 0.78em;
+    font-style: normal;
+}
+
+/* ---------------------------------------------------------
+   CONTENT LAYOUTS
+   --------------------------------------------------------- */
+.landingTwoColumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px;
+    align-items: center;
+}
+
+.landingTwoColumn img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(49,81,54,0.09);
+}
+
+.landingChecklist {
+    margin: 15px 0 0 20px;
+    padding: 0;
+}
+
+.landingChecklist li {
+    margin: 9px 0;
+}
+
+.landingChecklist li::marker {
+    color: #6f876f;
+}
+
+/* ---------------------------------------------------------
+   INTEREST / OPTION CARDS
+   --------------------------------------------------------- */
+.landingInterestsSection {
+    padding-bottom: 48px;
+}
+
+.landingCardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px 36px;
+}
+
+.landingCard {
+    border: 0;
+    border-top: 1px solid #cfd7d1;
+    border-radius: 0;
+    padding: 20px 0 2px 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.landingCardNumber {
+    display: block;
+    margin-bottom: 13px;
+    color: #929b94;
+    font-size: 0.76em;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.landingCard h3 {
+    font-size: 1.34em;
+}
+
+.landingCard p {
+    margin-bottom: 0;
+    color: #4b4f4c;
+    font-size: 1.01em;
+}
+
+.landingCardLink {
+    font-weight: 650;
+}
+
+/* ---------------------------------------------------------
+   CANDID PHOTO BREAK
+   --------------------------------------------------------- */
+.landingPhotoBreak {
+    padding: 10px 24px 68px 24px;
+    background: #fff;
+}
+
+.landingPhotoStrip {
+    display: grid;
+    grid-template-columns: 1.3fr 0.85fr 0.85fr;
+    gap: 10px;
+}
+
+.landingPhotoCard {
+    position: relative;
+    height: 315px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 9px;
+    background: #e9ece9;
+}
+
+.landingPhotoCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.landingPhotoCard figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 34px 15px 13px 15px;
+    color: #fff;
+    font-size: 0.88em;
+    line-height: 1.35;
+    font-weight: 600;
+    background: linear-gradient(180deg, rgba(20,27,22,0) 0%, rgba(20,27,22,0.74) 100%);
+}
+
+/* ---------------------------------------------------------
+   FEATURE STORIES
+   --------------------------------------------------------- */
+.landingFeatureGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.landingFeatureCard {
+    display: grid;
+    grid-template-columns: 0.92fr 1.08fr;
+    gap: 42px;
+    align-items: center;
+    padding: 34px 0;
+    overflow: visible;
+    border: 0;
+    border-top: 1px solid #d9dfda;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.landingFeatureCard:last-child {
+    border-bottom: 1px solid #d9dfda;
+}
+
+.landingFeatureCard img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.landingFeatureCard:nth-child(even) img {
+    order: 2;
+}
+
+.landingFeatureCard:nth-child(even) .landingFeatureBody {
+    order: 1;
+}
+
+.landingFeatureBody {
+    padding: 0;
+}
+
+.landingFeatureBody h3 {
+    font-size: 1.48em;
+    margin-bottom: 13px;
+}
+
+.landingFeatureBody p:last-child {
+    margin-bottom: 0;
+}
+
+.landingFeatureKicker {
+    display: block;
+    margin-bottom: 10px;
+    color: #738176;
+    font-size: 0.78em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Met-only book-cover treatment used on the Met landing page. */
+.metBookVisual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.metBookCoverWrap {
+    width: 100%;
+    max-width: 340px;
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    border: 1px solid #dbe2dd;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #f6f8f7 0%, #edf2ef 100%);
+}
+
+.landingFeatureCard .metBookCover {
+    width: auto;
+    max-width: 240px;
+    height: 340px;
+    object-fit: contain;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(44, 63, 49, 0.18);
+}
+
+.metBookCredit {
+    margin: 10px 0 0 0 !important;
+    color: #76807a;
+    font-size: 0.78em;
+    line-height: 1.35;
+    text-align: center;
+}
+
+.landingFeatureCard:nth-child(even) .metBookVisual {
+    order: 2;
+}
+
+.landingSmallNote {
+    font-size: 0.9em;
+    color: #666b67;
+}
+
+/* ---------------------------------------------------------
+   MET-SPECIFIC ODYSSEY
+   --------------------------------------------------------- */
+.metOdyssey {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 36px;
+    align-items: center;
+}
+
+.metOdysseyImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 11px;
+}
+
+.metOdysseyImages img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 9px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.10);
+}
+
+.metOdysseyImages img:first-child {
+    grid-column: 1 / -1;
+    height: 280px;
+}
+
+/* ---------------------------------------------------------
+   HIGHLIGHT CARDS
+   --------------------------------------------------------- */
+.landingDiscoverGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.landingDiscoverCard {
+    background: #fff;
+    border: 1px solid #dce2dd;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(49,81,54,0.05);
+}
+
+.landingDiscoverCard img {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+    display: block;
+}
+
+.landingDiscoverCard div {
+    padding: 15px;
+    font-size: 1em;
+}
+
+.landingDiscoverCard strong {
+    color: #315136;
+    font-size: 1.08em;
+}
+
+/* ---------------------------------------------------------
+   REVIEW INSIGHTS
+   --------------------------------------------------------- */
+.landingReviewsSection {
+    background: #fafbfa;
+    border-top: 1px solid #e5e9e5;
+    border-bottom: 1px solid #e5e9e5;
+}
+
+.landingReviewHeadingRow {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.landingReviewHeadingRow h2 {
+    margin-bottom: 0;
+}
+
+.landingReviewQuote {
+    max-width: 900px;
+    margin: 8px 0 30px 0;
+    padding: 0 0 0 22px;
+    border-left: 2px solid #9eaea0;
+}
+
+.landingReviewQuote p {
+    margin: 0 0 7px 0;
+    color: #304335;
+    font-size: 1.38em;
+    line-height: 1.42;
+    font-weight: 600;
+}
+
+.landingReviewQuote cite {
+    color: #747a75;
+    font-size: 0.84em;
+    font-style: normal;
+}
+
+.landingReviewScroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(285px, 31%);
+    gap: 14px;
+    overflow-x: auto;
+    padding: 4px 2px 16px 2px;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+}
+
+.landingReviewScroller::-webkit-scrollbar {
+    display: none;
+}
+
+.landingReviewScrollerWrap {
+    position: relative;
+    margin-top: 4px;
+}
+
+.landingReviewScrollerWrap .landingReviewArrow {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    transform: translateY(-50%);
+    border: 1px solid #bdd4d7;
+    border-radius: 50%;
+    background: #fff;
+    color: #2f7f8d;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+    font-size: 1.35em;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.landingReviewArrowLeft {
+    left: -22px;
+}
+
+.landingReviewArrowRight {
+    right: -22px;
+}
+
+.landingReviewScrollerWrap .landingReviewArrow:hover,
+.landingReviewScrollerWrap .landingReviewArrow:focus {
+    background: #eaf4f5;
+    border-color: #2f7f8d;
+    outline: none;
+}
+
+.landingReviewCard {
+    position: relative;
+    scroll-snap-align: start;
+    min-height: 220px;
+    padding: 24px 22px;
+    border: 1px solid #e0e5e1;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: none;
+}
+
+.landingReviewIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    margin-bottom: 17px;
+    border-radius: 50%;
+    background: #f8f2e4;
+    color: #b68a32;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.08em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.landingReviewCard h3 {
+    margin-bottom: 11px;
+    font-family: Constantia, "Palatino Linotype", Palatino, Georgia, serif;
+    color: #29482f;
+    font-size: 1.43em;
+    line-height: 1.12;
+    font-weight: 600;
+}
+
+.landingReviewCard p {
+    margin-bottom: 0;
+    color: #505551;
+    line-height: 1.55;
+}
+
+.landingReviewNote {
+    margin-top: 4px !important;
+    font-size: 0.84em;
+    color: #7a7f7b;
+}
+
+/* ---------------------------------------------------------
+   FAQ
+   --------------------------------------------------------- */
+.landingFaq {
+    margin-top: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+.landingFaq details {
+    border-top: 1px solid #d3dad5;
+    padding: 0;
+}
+
+.landingFaq details:last-child {
+    border-bottom: 1px solid #d3dad5;
+}
+
+.landingFaq summary {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    padding: 17px 46px 17px 0;
+    color: #315136;
+    font-size: 1.07em;
+    font-weight: 650;
+}
+
+.landingFaq summary::-webkit-details-marker {
+    display: none;
+}
+
+.landingFaq summary::after {
+    content: "+";
+    position: absolute;
+    right: 3px;
+    top: 11px;
+    color: #89948b;
+    font-size: 1.55em;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.landingFaq details[open] summary::after {
+    content: "\2212";
+}
+
+.landingFaq details p {
+    max-width: 860px;
+    margin: 0 0 18px 0;
+    color: #505551;
+}
+
+/* ---------------------------------------------------------
+   RELATED TOURS
+   --------------------------------------------------------- */
+.landingRelatedSection {
+    background: #fff;
+    padding-top: 56px;
+    padding-bottom: 50px;
+}
+
+.landingRelatedSection h2 {
+    margin-bottom: 24px;
+}
+
+.landingRelatedGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+}
+
+.landingRelatedCard {
+    padding: 0;
+    background: transparent;
+}
+
+.landingRelatedImage {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none !important;
+}
+
+.landingRelatedImage img {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.landingRelatedCard h3 {
+    margin-bottom: 7px;
+    font-size: 1.28em;
+}
+
+.landingRelatedCard h3 a {
+    color: #315136 !important;
+    text-decoration: none !important;
+}
+
+.landingRelatedCard p {
+    margin-bottom: 8px;
+    color: #555a56;
+}
+
+.landingRelatedLink {
+    font-size: 0.92em;
+    font-weight: 650;
+    text-decoration: none !important;
+}
+
+/* ---------------------------------------------------------
+   FINAL CTA
+   --------------------------------------------------------- */
+.landingFinalSection {
+    padding-top: 12px;
+}
+
+.landingFinalCta {
+    text-align: center;
+    background: linear-gradient(135deg, #2d4b32 0%, #3d6044 100%);
+    color: #fff;
+    border-radius: 13px;
+    padding: 38px 28px;
+    box-shadow: 0 9px 22px rgba(49,81,54,0.13);
+}
+
+.landingFinalCta h2 {
+    color: #fff;
+    font-size: 2.18em;
+}
+
+.landingFinalCta p {
+    font-size: 1.08em;
+}
+
+.landingFinalCta a:not(.landingButton) {
+    color: #eef4ed;
+    text-decoration-color: #aebdaf;
+}
+
+.landingFinalCta .landingButtonPrimary:link,
+.landingFinalCta .landingButtonPrimary:visited {
+    background: #fff;
+    color: #315136;
+    border-color: #fff;
+}
+
+.landingFinalCta > p:first-of-type {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f2f5f2;
+}
+
+.landingFinalCta .landingCtas {
+    margin-top: 21px;
+    margin-bottom: 19px;
+}
+
+.landingFinalContact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    margin: 0 auto !important;
+    padding: 10px 17px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.07);
+    color: #f7f9f7;
+    font-size: 0.94em !important;
+    line-height: 1.35;
+}
+
+.landingFinalContactLabel {
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 0.82em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.landingFinalContactDivider {
+    color: rgba(255, 255, 255, 0.36);
+}
+
+.landingPage .landingFinalCta .landingFinalContact a:link,
+.landingPage .landingFinalCta .landingFinalContact a:visited,
+.landingPage .landingFinalCta .landingFinalContact a:hover,
+.landingPage .landingFinalCta .landingFinalContact a:focus {
+    color: #fff !important;
+    font-weight: 650;
+}
+
+.landingPage .landingFinalCta .landingFinalContact a:link,
+.landingPage .landingFinalCta .landingFinalContact a:visited {
+    text-decoration-color: rgba(255, 255, 255, 0.56);
+}
+
+.landingPage .landingFinalCta .landingFinalContact a:hover,
+.landingPage .landingFinalCta .landingFinalContact a:focus {
+    text-decoration-color: #fff;
+    outline: none;
+}
+
+/* ---------------------------------------------------------
+   HEADER / FOOTER WIDTH COMPATIBILITY
+   --------------------------------------------------------- */
+@media screen and (min-width: 950px) {
+    .landingWrapper.bodyWrapper {
+        width: 100%;
+        max-width: none;
+    }
+
+    .landingWrapper .bannerWrapper,
+    .landingWrapper .menuWrapper,
+    .landingWrapper .footerWrapper {
+        width: 950px;
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .landingWrapper .menuWrapper {
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    .landingWrapper .bannerWrapper::before {
+        display: none;
+    }
+}
+
+/* ---------------------------------------------------------
+   TABLET
+   --------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+    .landingHero,
+    .landingTwoColumn,
+    .metOdyssey {
+        grid-template-columns: 1fr;
+    }
+
+    .landingHero {
+        gap: 38px;
+        padding-top: 32px;
+        padding-bottom: 52px;
+    }
+
+    .landingHero h1 {
+        max-width: 760px;
+        font-size: 2.8em;
+    }
+
+    .landingHeroVisual {
+        max-width: 720px;
+        padding-left: 12px;
+    }
+
+    .landingHeroVisual::before {
+        right: -12px;
+        left: 40px;
+    }
+
+    .landingHeroQuote {
+        margin-left: -12px;
+    }
+
+    .landingHero .landingCtas {
+        flex-wrap: wrap;
+    }
+
+    .landingCardGrid,
+    .landingDiscoverGrid,
+    .landingRelatedGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .landingPhotoStrip {
+        grid-template-columns: 1.15fr 0.85fr;
+    }
+
+    .landingPhotoCard:last-child {
+        grid-column: 1 / -1;
+        height: 285px;
+    }
+
+    .landingFeatureCard {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 30px;
+    }
+
+    .landingReviewScroller {
+        grid-auto-columns: minmax(280px, 46%);
+    }
+
+    .landingReviewArrowLeft {
+        left: -12px;
+    }
+
+    .landingReviewArrowRight {
+        right: -12px;
+    }
+}
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+@media screen and (max-width: 620px) {
+    .landingPage {
+        font-size: 1.02em;
+    }
+
+    .landingSection {
+        padding: 42px 18px;
+    }
+
+    .landingBreadcrumb {
+        padding: 15px 18px 0 18px;
+        font-size: 0.82em;
+    }
+
+    .landingHero {
+        padding: 30px 18px 48px 18px;
+        gap: 30px;
+    }
+
+    .landingHero h1 {
+        font-size: 2.2em;
+        line-height: 1.08;
+    }
+
+    .landingHeroLead {
+        font-size: 1.17em;
+    }
+
+    .landingHeroBio {
+        font-size: 0.98em;
+    }
+
+    .landingTrustList {
+        gap: 7px;
+    }
+
+    .landingTrustItem {
+        font-size: 0.82em;
+    }
+
+    .landingHeroVisual {
+        padding: 5px 8px 0 8px;
+    }
+
+    .landingHeroVisual::before {
+        top: -7px;
+        right: -4px;
+        bottom: 30px;
+        left: 30px;
+    }
+
+    .landingHeroQuote {
+        width: calc(100% - 12px);
+        margin: -16px 0 0 0;
+        padding: 13px 15px;
+    }
+
+    .landingPage h2 {
+        font-size: 1.72em;
+    }
+
+    .landingPage h3 {
+        font-size: 1.22em;
+    }
+
+    .landingSectionIntro {
+        font-size: 1.08em;
+    }
+
+    .landingCardGrid,
+    .landingDiscoverGrid,
+    .landingRelatedGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .landingCardGrid {
+        gap: 18px;
+    }
+
+    .landingPhotoBreak {
+        padding: 4px 18px 48px 18px;
+    }
+
+    .landingPhotoStrip {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .landingPhotoCard,
+    .landingPhotoCard:last-child {
+        grid-column: auto;
+        height: 250px;
+    }
+
+    .landingFeatureCard {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 28px 0;
+    }
+
+    .landingFeatureCard img,
+    .landingFeatureCard:nth-child(even) img,
+    .landingFeatureCard:nth-child(even) .landingFeatureBody {
+        order: initial;
+    }
+
+    .landingFeatureCard img,
+    .landingDiscoverCard img {
+        height: auto;
+    }
+
+    .metOdysseyImages img,
+    .metOdysseyImages img:first-child {
+        height: auto;
+    }
+
+    .landingReviewHeadingRow {
+        align-items: center;
+        gap: 14px;
+    }
+
+    .landingReviewQuote p {
+        font-size: 1.15em;
+    }
+
+    .landingReviewScroller {
+        grid-auto-columns: 84%;
+        margin-right: -18px;
+    }
+
+    .landingReviewCard {
+        min-height: 0;
+    }
+
+    .landingCtas,
+    .landingHero .landingCtas {
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .landingButton,
+    .landingHero .landingButtonSecondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .landingHero .landingButtonSecondary:link,
+    .landingHero .landingButtonSecondary:visited {
+        padding: 11px 16px;
+        border: 1px solid #9ead9f;
+        border-radius: 7px;
+    }
+
+    .landingFeatureCard:nth-child(even) .metBookVisual {
+        order: initial;
+    }
+
+    .metBookCoverWrap {
+        min-height: 0;
+        padding: 20px;
+    }
+
+    .landingFeatureCard .metBookCover {
+        width: auto;
+        max-width: min(220px, 72vw);
+        height: auto;
+        max-height: 330px;
+    }
+
+    .landingReviewScrollerWrap .landingReviewArrow {
+        display: none;
+    }
+
+    .landingFinalContact {
+        border-radius: 12px;
+        padding: 11px 14px;
+    }
+
+    .landingFinalContactDivider {
+        display: none;
+    }
+
+    .landingRelatedImage img {
+        height: auto;
+    }
+
+    .landingFaq summary {
+        font-size: 1.02em;
+    }
+}
