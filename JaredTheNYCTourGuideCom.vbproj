@@ -425,7 +425,6 @@
     <Content Include="Styles\extensions\jquery.mmenu.themes.css" />
     <Content Include="Styles\extensions\jquery.mmenu.widescreen.css" />
     <Content Include="Styles\jared.css" />
-    <Content Include="Styles\landing.css" />
     <Content Include="Styles\jquery.mmenu.all.css" />
     <Content Include="Styles\jquery.mmenu.css" />
     <Content Include="Styles\jquery.mmenu.oncanvas.css" />
@@ -613,7 +612,7 @@
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105). The missing file is {0}.</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
