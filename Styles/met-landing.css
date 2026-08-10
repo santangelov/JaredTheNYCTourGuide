@@ -9,9 +9,9 @@ body {
 
 /* ---------------------------------------------------------
    HEADER / PAGE TRANSITION
-   The banner art already fades from white into gray-green.
-   Extend that same idea across the browser so the right edge
-   of the banner does not stop abruptly on wide screens.
+   The banner itself moves from white into gray-green. Extend
+   that color as a soft wash behind the map rather than a
+   mechanical left-to-right gradient.
    --------------------------------------------------------- */
 .metLandingWrapper .bannerWrapper {
     position: relative;
@@ -26,7 +26,7 @@ body {
     left: 50%;
     width: 100vw;
     transform: translateX(-50%);
-    background: linear-gradient(90deg, #ffffff 0%, #ffffff 49%, #f5f7f5 61%, #e4e8e4 100%);
+    background: radial-gradient(ellipse 62% 115% at 76% 48%, #dfe6e1 0%, #e9eeea 34%, #f4f6f4 54%, rgba(255,255,255,0) 77%), #fff;
     z-index: 0;
 }
 
@@ -42,9 +42,9 @@ body {
 
 .metHeaderDivider {
     width: 100%;
-    height: 1px;
-    background: #d7ddda;
-    box-shadow: 0 2px 7px rgba(45, 66, 50, 0.06);
+    height: 2px;
+    background: #e0e4e1;
+    box-shadow: none;
 }
 
 /* ---------------------------------------------------------
@@ -78,8 +78,11 @@ body {
     font-weight: 700;
 }
 
+/* One restrained secondary heading color gives the page rhythm
+   without adding another structural accent color. */
 .metLandingPage h3 {
     margin: 0 0 9px 0;
+    color: #765047;
     font-size: 1.28em;
     font-weight: 650;
 }
@@ -189,8 +192,11 @@ body {
 .metHero h1 {
     margin: 0 0 18px 0;
     max-width: 720px;
-    font-size: 3.2em;
-    font-weight: 720;
+    font-family: Constantia, "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 3.28em;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
     color: #29482f;
 }
 
@@ -790,7 +796,7 @@ body {
 }
 
 .metRelatedCard h3 a {
-    color: #315136 !important;
+    color: #765047 !important;
     text-decoration: none !important;
 }
 
@@ -959,6 +965,7 @@ body {
 
     .metHero h1 {
         font-size: 2.2em;
+        line-height: 1.08;
     }
 
     .metHeroLead {
