@@ -9,9 +9,6 @@ body {
 
 /* ---------------------------------------------------------
    HEADER / PAGE TRANSITION
-   The banner itself moves from white into gray-green. Extend
-   that color as a soft wash behind the map rather than a
-   mechanical left-to-right gradient.
    --------------------------------------------------------- */
 .metLandingWrapper .bannerWrapper {
     position: relative;
@@ -99,8 +96,9 @@ body {
     color: #27472e;
 }
 
+/* Align the breadcrumb with the wider hero rather than the narrower body sections. */
 .metBreadcrumb {
-    max-width: 1120px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 18px 24px 4px 24px;
     font-size: 0.86em;
@@ -146,7 +144,7 @@ body {
     color: #4a4e4b;
 }
 
-/* Playful but restrained accent: teal appears only in small eyebrow labels. */
+/* Playful but restrained accent: teal appears only in small labels/icons. */
 .metEyebrow {
     display: inline-block;
     position: relative;
@@ -172,7 +170,7 @@ body {
 }
 
 /* ---------------------------------------------------------
-   HERO - editorial rather than boxed
+   HERO
    --------------------------------------------------------- */
 .metHero {
     max-width: 1240px;
@@ -181,7 +179,7 @@ body {
     grid-template-columns: 0.96fr 1.04fr;
     gap: 48px;
     align-items: center;
-    padding: 48px 24px 78px 24px;
+    padding: 36px 24px 55px 24px;
 }
 
 .metHeroCopy {
@@ -213,30 +211,37 @@ body {
     font-size: 1.01em;
 }
 
+/* Credentials read as small modern badges rather than another line of body copy. */
 .metTrustList {
     display: flex;
     flex-wrap: wrap;
-    gap: 9px 20px;
+    gap: 8px;
     margin: 21px 0 23px 0;
 }
 
 .metTrustItem {
     position: relative;
-    padding-left: 13px;
-    color: #3b5c42;
-    font-size: 0.9em;
+    display: inline-block;
+    padding: 7px 11px 7px 24px;
+    color: #315136;
+    background: #f7fbfa;
+    border: 1px solid #d2dfdc;
+    border-radius: 999px;
+    font-size: 0.86em;
+    line-height: 1.2;
     font-weight: 650;
 }
 
 .metTrustItem::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0.68em;
+    left: 11px;
+    top: 50%;
     width: 5px;
     height: 5px;
+    margin-top: -2.5px;
     border-radius: 50%;
-    background: #9bab9c;
+    background: #2f7f8d;
 }
 
 .metCtas {
@@ -277,8 +282,6 @@ body {
     opacity: 0.9;
 }
 
-/* Keep the hero actions on one clean line at desktop widths.
-   The second action behaves more like a text link than a second button. */
 .metHero .metCtas {
     flex-wrap: nowrap;
     align-items: center;
@@ -363,7 +366,7 @@ body {
 }
 
 /* ---------------------------------------------------------
-   CONTENT LAYOUTS - retained sections
+   CONTENT LAYOUTS
    --------------------------------------------------------- */
 .metTwoColumn {
     display: grid;
@@ -393,7 +396,7 @@ body {
 }
 
 /* ---------------------------------------------------------
-   MAKE THE MET YOUR MET - flat editorial grid, no boxes
+   MAKE THE MET YOUR MET
    --------------------------------------------------------- */
 .metInterestsSection {
     padding-bottom: 48px;
@@ -438,7 +441,7 @@ body {
 }
 
 /* ---------------------------------------------------------
-   CANDID PHOTO BREAK - visual mosaic, minimal chrome
+   CANDID PHOTO BREAK
    --------------------------------------------------------- */
 .metPhotoBreak {
     padding: 10px 24px 68px 24px;
@@ -481,7 +484,7 @@ body {
 }
 
 /* ---------------------------------------------------------
-   BOOK / FAMILY STORIES - alternating editorial rows
+   BOOK / FAMILY STORIES
    --------------------------------------------------------- */
 .metFeatureGrid {
     display: grid;
@@ -552,7 +555,7 @@ body {
 }
 
 /* ---------------------------------------------------------
-   ODYSSEY - retained
+   ODYSSEY
    --------------------------------------------------------- */
 .metOdyssey {
     display: grid;
@@ -583,7 +586,7 @@ body {
 }
 
 /* ---------------------------------------------------------
-   SELECTED HIGHLIGHTS - retained
+   SELECTED HIGHLIGHTS
    --------------------------------------------------------- */
 .metDiscoverGrid {
     display: grid;
@@ -617,12 +620,49 @@ body {
 }
 
 /* ---------------------------------------------------------
-   REVIEW INSIGHTS - modern horizontal proof, minimal color
+   REVIEW INSIGHTS
    --------------------------------------------------------- */
 .metReviewsSection {
     background: #fafbfa;
     border-top: 1px solid #e5e9e5;
     border-bottom: 1px solid #e5e9e5;
+}
+
+.metReviewHeadingRow {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.metReviewHeadingRow h2 {
+    margin-bottom: 0;
+}
+
+.metReviewNav {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 3px;
+}
+
+.metReviewArrow {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #bdd4d7;
+    border-radius: 50%;
+    background: #fff;
+    color: #2f7f8d;
+    font-size: 1.35em;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.metReviewArrow:hover,
+.metReviewArrow:focus {
+    background: #eaf4f5;
+    border-color: #2f7f8d;
+    outline: none;
 }
 
 .metReviewQuote {
@@ -655,6 +695,11 @@ body {
     padding: 4px 2px 16px 2px;
     scroll-snap-type: x mandatory;
     overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+}
+
+.metReviewScroller::-webkit-scrollbar {
+    display: none;
 }
 
 .metReviewCard {
@@ -668,18 +713,27 @@ body {
     box-shadow: none;
 }
 
-.metReviewNumber {
-    display: block;
-    margin-bottom: 20px;
-    color: #a0aaa2;
-    font-size: 0.75em;
+.metReviewIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    margin-bottom: 17px;
+    border-radius: 50%;
+    background: #eaf4f5;
+    color: #2f7f8d;
+    font-size: 1.02em;
     font-weight: 700;
-    letter-spacing: 0.12em;
 }
 
 .metReviewCard h3 {
-    font-size: 1.3em;
     margin-bottom: 11px;
+    font-family: Constantia, "Palatino Linotype", Palatino, Georgia, serif;
+    color: #29482f;
+    font-size: 1.43em;
+    line-height: 1.12;
+    font-weight: 600;
 }
 
 .metReviewCard p {
@@ -688,50 +742,17 @@ body {
     line-height: 1.55;
 }
 
-.metScrollHint {
-    margin-top: 2px !important;
-    font-size: 0.86em;
-    color: #747a75;
-}
-
 .metReviewNote {
-    margin-top: -2px !important;
+    margin-top: 4px !important;
     font-size: 0.84em;
     color: #7a7f7b;
 }
 
 /* ---------------------------------------------------------
-   PRACTICAL / FAQ - columns and rules instead of boxes
+   FAQ
    --------------------------------------------------------- */
-.metPractical .metFacts {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.metFacts {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0 28px;
-    margin-top: 20px;
-}
-
-.metFact {
-    padding: 18px 0 2px 0;
-    border: 0;
-    border-top: 1px solid #cfd7d1;
-    border-radius: 0;
-    background: transparent;
-    color: #4a4f4b;
-}
-
-.metFact strong {
-    display: inline-block;
-    margin-bottom: 3px;
-    color: #315136;
-    font-size: 1.05em;
-}
-
 .metFaq {
-    margin-top: 52px;
+    margin-top: 0;
     padding: 0;
     background: transparent;
     border: 0;
@@ -783,7 +804,7 @@ body {
 }
 
 /* ---------------------------------------------------------
-   RELATED TOURS - light visual links, not another card wall
+   RELATED TOURS
    --------------------------------------------------------- */
 .metRelatedSection {
     background: #fff;
@@ -842,7 +863,7 @@ body {
 }
 
 /* ---------------------------------------------------------
-   FINAL CTA - retained, slightly cleaner
+   FINAL CTA
    --------------------------------------------------------- */
 .metFinalSection {
     padding-top: 12px;
@@ -919,7 +940,8 @@ body {
 
     .metHero {
         gap: 38px;
-        padding-top: 38px;
+        padding-top: 32px;
+        padding-bottom: 52px;
     }
 
     .metHero h1 {
@@ -965,11 +987,6 @@ body {
         gap: 30px;
     }
 
-    .metPractical .metFacts {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 22px 28px;
-    }
-
     .metReviewScroller {
         grid-auto-columns: minmax(280px, 46%);
     }
@@ -993,7 +1010,7 @@ body {
     }
 
     .metHero {
-        padding: 34px 18px 60px 18px;
+        padding: 30px 18px 48px 18px;
         gap: 30px;
     }
 
@@ -1008,6 +1025,14 @@ body {
 
     .metHeroBio {
         font-size: 0.98em;
+    }
+
+    .metTrustList {
+        gap: 7px;
+    }
+
+    .metTrustItem {
+        font-size: 0.82em;
     }
 
     .metHeroVisual {
@@ -1041,9 +1066,7 @@ body {
 
     .metCardGrid,
     .metDiscoverGrid,
-    .metRelatedGrid,
-    .metFacts,
-    .metPractical .metFacts {
+    .metRelatedGrid {
         grid-template-columns: 1fr;
     }
 
@@ -1086,6 +1109,16 @@ body {
     .metOdysseyImages img,
     .metOdysseyImages img:first-child {
         height: auto;
+    }
+
+    .metReviewHeadingRow {
+        align-items: center;
+        gap: 14px;
+    }
+
+    .metReviewArrow {
+        width: 38px;
+        height: 38px;
     }
 
     .metReviewQuote p {
