@@ -10,7 +10,7 @@
     <meta name="description" content="Book a private Met Museum tour in NYC with Jared, a former Met employee and Columbia Art History graduate. Customized tours for adults, families, kids, students and groups." />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link type="text/css" href="Styles/jared.css?ver=3.21" rel="stylesheet" />
-    <link type="text/css" href="Styles/met-landing.css?ver=1.2" rel="stylesheet" />
+    <link type="text/css" href="Styles/met-landing.css?ver=1.3" rel="stylesheet" />
     <link type="text/css" href="Styles/jquery.mmenu.all.css" rel="stylesheet" />
 
     <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
@@ -272,7 +272,7 @@
                             <div><strong>Arms &amp; Armor</strong><br />Where engineering, craftsmanship, status and spectacle meet.</div>
                         </article>
                         <article class="metDiscoverCard">
-                            <img src="images/Met_Museum/Pompeii at Met with Jared.jpg" alt="Jared in the reconstructed Roman bedroom near Pompeii at the Met" />
+                            <img src="images/Met_Museum/Pompeii Room at Met Museum.jpg" alt="Reconstructed Roman bedroom from the Villa of P. Fannius Synistor at Boscoreale, near Pompeii, displayed at the Met" />
                             <div><strong>Rome &amp; Pompeii</strong><br />Step into an ancient interior and talk about perspective, wealth and daily life.</div>
                         </article>
                         <article class="metDiscoverCard">
@@ -294,8 +294,16 @@
             <!-- REVIEW INSIGHTS -->
             <section class="metSection metReviewsSection">
                 <div class="metInner">
-                    <span class="metEyebrow">What Guests Consistently Say</span>
-                    <h2>Why People Like Touring the Met with Jared</h2>
+                    <div class="metReviewHeadingRow">
+                        <div>
+                            <span class="metEyebrow">What Guests Consistently Say</span>
+                            <h2>Why People Like Touring the Met with Jared</h2>
+                        </div>
+                        <div class="metReviewNav" aria-label="Review theme navigation">
+                            <button class="metReviewArrow" type="button" aria-label="Scroll review themes left" onclick="document.getElementById('metReviewScroller').scrollBy({left:-360,behavior:'smooth'});">&#8592;</button>
+                            <button class="metReviewArrow" type="button" aria-label="Scroll review themes right" onclick="document.getElementById('metReviewScroller').scrollBy({left:360,behavior:'smooth'});">&#8594;</button>
+                        </div>
+                    </div>
                     <p class="metSectionIntro">The same strengths show up again and again in Jared's reviews across different platforms and different kinds of guests.</p>
 
                     <blockquote class="metReviewQuote">
@@ -303,63 +311,52 @@
                         <cite>&mdash; C.B., Met Tour, June 2025</cite>
                     </blockquote>
 
-                    <div class="metReviewScroller" aria-label="Recurring themes in Jared's tour reviews">
+                    <div id="metReviewScroller" class="metReviewScroller" aria-label="Recurring themes in Jared's tour reviews">
                         <article class="metReviewCard">
-                            <span class="metReviewNumber">01</span>
+                            <span class="metReviewIcon" aria-hidden="true">&#10003;</span>
                             <h3>Deep Knowledge</h3>
                             <p>Reviewers repeatedly describe Jared as knowledgeable and expert, with a wealth of information about art, history, architecture and hidden details.</p>
                         </article>
                         <article class="metReviewCard">
-                            <span class="metReviewNumber">02</span>
+                            <span class="metReviewIcon" aria-hidden="true">&#10003;</span>
                             <h3>Makes the Met Understandable</h3>
                             <p>Museum guests especially value how he makes large collections feel easier to understand, less overwhelming and more meaningful.</p>
                         </article>
                         <article class="metReviewCard">
-                            <span class="metReviewNumber">03</span>
+                            <span class="metReviewIcon" aria-hidden="true">&#10003;</span>
                             <h3>Brings It to Life</h3>
                             <p>Stories and context help visitors understand what they are seeing and notice details they probably would have missed on their own.</p>
                         </article>
                         <article class="metReviewCard">
-                            <span class="metReviewNumber">04</span>
+                            <span class="metReviewIcon" aria-hidden="true">&#10003;</span>
                             <h3>Truly Customized</h3>
                             <p>Jared listens, adjusts the route and pace, and makes the experience feel built around the interests of the actual group in front of him.</p>
                         </article>
                         <article class="metReviewCard">
-                            <span class="metReviewNumber">05</span>
+                            <span class="metReviewIcon" aria-hidden="true">&#10003;</span>
                             <h3>Great With Families</h3>
                             <p>Reviews repeatedly praise his ability to engage children, teens, grandparents, students and mixed-age groups without losing the adults.</p>
                         </article>
                         <article class="metReviewCard">
-                            <span class="metReviewNumber">06</span>
+                            <span class="metReviewIcon" aria-hidden="true">&#10003;</span>
                             <h3>Personable &amp; Fun</h3>
                             <p>Guests consistently describe him as personable, flexible and funny&mdash;knowledgeable without making the experience feel like a lecture.</p>
                         </article>
                         <article class="metReviewCard">
-                            <span class="metReviewNumber">07</span>
+                            <span class="metReviewIcon" aria-hidden="true">&#10003;</span>
                             <h3>Uses Your Time Well</h3>
                             <p>Planning, pacing, routing and practical help are part of the value, especially when visitors have limited time and a long wish list.</p>
                         </article>
                     </div>
-                    <p class="metScrollHint">Swipe or scroll to see more review themes &rarr;</p>
-                    <p class="metReviewNote">The cards above summarize recurring review patterns; they are not presented as direct quotations.</p>
+                    <p class="metReviewNote">The cards above summarize recurring review patterns; they are not presented as direct quotations. Swipe directly on touch screens.</p>
                     <p><a href="testimonials.htm#individuals"><strong>Read Jared's tour reviews</strong></a></p>
                 </div>
             </section>
 
-            <!-- PRACTICAL -->
+            <!-- FAQ -->
             <section class="metSection metSectionAlt">
-                <div class="metInner metPractical">
-                    <span class="metEyebrow">The Practical Side</span>
-                    <h2>Your Tour, Your Pace</h2>
-                    <div class="metFacts">
-                        <div class="metFact"><strong>Private &amp; customized</strong><br />Build the visit around your interests and priorities.</div>
-                        <div class="metFact"><strong>Families welcome</strong><br />Adjust stories, pace and activities to different ages.</div>
-                        <div class="metFact"><strong>Students &amp; educators</strong><br />Connect museum objects to curriculum, literature and history.</div>
-                        <div class="metFact"><strong>Current museum rules</strong><br />Jared will explain ticketing and guide requirements when you book.</div>
-                    </div>
-                </div>
-
                 <div class="metInner metFaq">
+                    <span class="metEyebrow">Before You Visit</span>
                     <h2>Private Met Tour FAQ</h2>
                     <details>
                         <summary>Can Jared customize the Met tour around our interests?</summary>
