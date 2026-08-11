@@ -7,10 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=4.0, user-scalable=yes" />
     <link rel="canonical" href="https://jaredthenyctourguide.com/Met_Museum_of_Art_Walking_Tour.htm" />
 
-    <meta name="description" content="Book a private Met Museum tour in NYC with Jared, a former Met employee and Columbia Art History graduate. Customized tours for adults, families, kids, students and groups." />
+    <meta name="description" content="Book a private Met Museum tour in NYC with Jared, a former Met employee and Columbia Art History graduate. Customized for adults, families and students." />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+    <!-- Social sharing: Facebook, Messenger, LinkedIn and other Open Graph consumers -->
+    <meta property="og:title" content="Private Met Museum Tour NYC | Jared The NYC Tour Guide" />
+    <meta property="og:description" content="Explore the Met with Jared on a private, customized tour built around your interests, ages and pace." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jaredthenyctourguide.com/Met_Museum_of_Art_Walking_Tour.htm" />
+    <meta property="og:site_name" content="Jared The NYC Tour Guide" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://jaredthenyctourguide.com/images/Met_Museum/Met%20Museum%20Private%20Tour%202025.jpg" />
+    <meta property="og:image:secure_url" content="https://jaredthenyctourguide.com/images/Met_Museum/Met%20Museum%20Private%20Tour%202025.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Jared with guests on a private Metropolitan Museum of Art tour in New York City" />
+
+    <!-- X / Twitter large-image card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Private Met Museum Tour NYC | Jared The NYC Tour Guide" />
+    <meta name="twitter:description" content="Explore the Met with Jared on a private, customized tour built around your interests, ages and pace." />
+    <meta name="twitter:image" content="https://jaredthenyctourguide.com/images/Met_Museum/Met%20Museum%20Private%20Tour%202025.jpg" />
+    <meta name="twitter:image:alt" content="Jared with guests on a private Metropolitan Museum of Art tour in New York City" />
+
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link type="text/css" href="Styles/jared.css?ver=3.21" rel="stylesheet" />
-    <link type="text/css" href="Styles/met-landing.css?ver=1.1" rel="stylesheet" />
+    <link type="text/css" href="Styles/landing.css?ver=1.4" rel="stylesheet" />
     <link type="text/css" href="Styles/jquery.mmenu.all.css" rel="stylesheet" />
 
     <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
@@ -19,6 +40,13 @@
         $(function () {
             $("#menu").mmenu({});
         });
+
+        function scrollLandingReviews(amount) {
+            var scroller = document.getElementById('landingReviewScroller');
+            if (scroller) {
+                scroller.scrollBy({ left: amount, behavior: 'smooth' });
+            }
+        }
     </script>
 
     <script type="application/ld+json">
@@ -36,6 +64,30 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://jaredthenyctourguide.com/Met_Museum_of_Art_Walking_Tour.htm#webpage",
+      "url": "https://jaredthenyctourguide.com/Met_Museum_of_Art_Walking_Tour.htm",
+      "name": "Private Met Museum Tour NYC | Jared The NYC Tour Guide",
+      "description": "A private, customized Metropolitan Museum of Art tour in New York City led by Jared, a former Met employee and Columbia Art History graduate.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://jaredthenyctourguide.com/#website",
+        "url": "https://jaredthenyctourguide.com/",
+        "name": "Jared The NYC Tour Guide"
+      },
+      "mainEntity": {"@id": "https://jaredthenyctourguide.com/Met_Museum_of_Art_Walking_Tour.htm#service"},
+      "about": {"@id": "https://jaredthenyctourguide.com/Met_Museum_of_Art_Walking_Tour.htm#service"},
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "https://jaredthenyctourguide.com/images/Met_Museum/Met%20Museum%20Private%20Tour%202025.jpg",
+        "caption": "Jared with guests on a private Metropolitan Museum of Art tour"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type":"ListItem","position":1,"name":"Home","item":"https://jaredthenyctourguide.com/"},
@@ -48,17 +100,24 @@
     {
       "@context": "https://schema.org",
       "@type": "Service",
+      "@id": "https://jaredthenyctourguide.com/Met_Museum_of_Art_Walking_Tour.htm#service",
       "name": "Private Metropolitan Museum of Art Tour",
-      "description": "A private, customized Metropolitan Museum of Art tour in New York City led by Jared Goldstein, who worked at the Met and studied Art History at Columbia University.",
+      "serviceType": "Private Metropolitan Museum of Art tour",
+      "description": "A private, customized Metropolitan Museum of Art tour in New York City led by Jared, who worked at the Met and studied Art History at Columbia University.",
       "url": "https://jaredthenyctourguide.com/Met_Museum_of_Art_Walking_Tour.htm",
+      "mainEntityOfPage": {"@id": "https://jaredthenyctourguide.com/Met_Museum_of_Art_Walking_Tour.htm#webpage"},
+      "image": "https://jaredthenyctourguide.com/images/Met_Museum/Met%20Museum%20Private%20Tour%202025.jpg",
       "provider": {"@id": "https://jaredthenyctourguide.com/#organization"},
-      "areaServed": "New York City"
+      "areaServed": {
+        "@type": "City",
+        "name": "New York City"
+      }
     }
     </script>
 </head>
 
 <body>
-    <div class="bodyWrapper metLandingWrapper">
+    <div class="bodyWrapper landingWrapper">
         <!-- START BANNER -->
         <div class="bannerWrapper">
             <a href="index.htm"><img src="images/banner-2023.png?x" border="0" alt="Jared The NYC Tour Guide - custom private tours of New York City" /></a>
@@ -82,44 +141,52 @@
             </ul>
         </div>
         <!-- END MENU -->
+        <div class="landingHeaderDivider" aria-hidden="true"></div>
 
-        <main class="metLandingPage">
-            <div class="metBreadcrumb"><a href="destinations.htm">Destinations</a> &raquo; Private Metropolitan Museum of Art Tour</div>
+        <main class="landingPage">
+            <div class="landingBreadcrumb"><a href="destinations.htm">Destinations</a> <span>&rsaquo;</span> Private Metropolitan Museum of Art Tour</div>
 
             <!-- HERO -->
-            <section class="metHero">
-                <div>
-                    <span class="metEyebrow">Private Metropolitan Museum of Art Tour</span>
+            <section class="landingHero">
+                <div class="landingHeroCopy">
+                    <span class="landingEyebrow">Private Metropolitan Museum of Art Tour</span>
                     <h1>Private Met Museum Tours Built Around Your Interests</h1>
-                    <p class="metHeroLead">The Met is enormous. Jared makes it personal, understandable and fun&mdash;whether you love ancient history, great paintings, mythology, architecture, children's books or simply want to see the highlights without feeling overwhelmed.</p>
+                    <p class="landingHeroLead">The Met is enormous. Jared makes it personal, understandable and fun&mdash;whether you love ancient history, great paintings, mythology, architecture, children's books or simply want to see the highlights without feeling overwhelmed.</p>
 
-                    <div class="metTrustList" aria-label="Jared's Met tour credentials">
-                        <span class="metTrustItem">Worked at the Met</span>
-                        <span class="metTrustItem">Columbia Art History</span>
-                        <span class="metTrustItem">Private &amp; Customized</span>
-                        <span class="metTrustItem">Families &amp; Students</span>
+                    <div class="landingTrustList" aria-label="Jared's Met tour credentials">
+                        <span class="landingTrustItem">Worked at the Met</span>
+                        <span class="landingTrustItem">Columbia Art History</span>
+                        <span class="landingTrustItem">Private &amp; Customized</span>
+                        <span class="landingTrustItem">Families &amp; Students</span>
                     </div>
 
-                    <p>I worked for the Assistant Curator of the Department of Twentieth Century Architecture and Design at the Metropolitan Museum of Art and studied Art History at Columbia University. My experience inside the museum helps me connect the art to the people, history, politics, myths and stories behind it&mdash;and to what interests you most.</p>
+                    <p class="landingHeroBio">I worked for the Assistant Curator of the Department of Twentieth Century Architecture and Design at the Metropolitan Museum of Art and studied Art History at Columbia University. My experience inside the museum helps me connect the art to the people, history, politics, myths and stories behind it&mdash;and to what interests you most.</p>
 
-                    <div class="metCtas">
-                        <a class="metButton metButtonPrimary" href="tourBooking.aspx">Plan Your Private Met Tour</a>
-                        <a class="metButton metButtonSecondary" href="mailto:Jared@JaredtheNYCTourGuide.com?subject=Private Met Museum Tour">Tell Jared What Interests You</a>
+                    <div class="landingCtas">
+                        <a class="landingButton landingButtonPrimary" href="tourBooking.aspx">Plan Your Private Met Tour</a>
+                        <a class="landingButton landingButtonSecondary" href="mailto:Jared@JaredtheNYCTourGuide.com?subject=Private Met Museum Tour">Tell Jared What Interests You</a>
                     </div>
                 </div>
-                <div class="metHeroImage">
-                    <img src="images/Met_Museum/Met Museum Private Tour 2025.jpg" alt="Jared with guests on a private Metropolitan Museum of Art tour" />
+
+                <div class="landingHeroVisual">
+                    <div class="landingHeroImage">
+                        <img src="images/Met_Museum/Met Museum Private Tour 2025.jpg" alt="Jared with guests on a private Metropolitan Museum of Art tour" />
+                    </div>
+                    <blockquote class="landingHeroQuote">
+                        <p>&ldquo;So engaging and informative&rdquo; &middot; &ldquo;well paced&rdquo; &middot; &ldquo;great for the whole family&rdquo;</p>
+                        <cite>&mdash; KB, Family Met Tour</cite>
+                    </blockquote>
                 </div>
             </section>
 
             <!-- WITHOUT THE OVERWHELM -->
-            <section class="metSection metSectionAlt">
-                <div class="metInner metTwoColumn">
+            <section class="landingSection landingSectionAlt">
+                <div class="landingInner landingTwoColumn">
                     <div>
                         <h2>The Met Without the Overwhelm</h2>
                         <p>The Metropolitan Museum of Art covers thousands of years of human creativity. Trying to see everything is not the goal. A private tour should help you see the right things, understand why they matter, and leave wanting to discover more.</p>
                         <p>Jared listens first, then adjusts the route, pace and emphasis around your group. First visit? He can build a highlights tour. Already know the museum? Go deeper into the periods, artists and stories you care about.</p>
-                        <ul class="metChecklist">
+                        <ul class="landingChecklist">
                             <li><strong>Spend your time on what interests you.</strong></li>
                             <li><strong>Understand the stories and context behind the objects.</strong></li>
                             <li><strong>Keep children, teens and mixed-age groups involved.</strong></li>
@@ -133,69 +200,82 @@
             </section>
 
             <!-- CUSTOMIZATION -->
-            <section class="metSection">
-                <div class="metInner">
+            <section class="landingSection landingInterestsSection">
+                <div class="landingInner">
+                    <span class="landingEyebrow">Choose Your Angle</span>
                     <h2>Make the Met Your Met</h2>
-                    <p class="metSectionIntro">These are ideas, not rigid itineraries. A private tour can combine several interests and change direction as your group discovers what excites them.</p>
+                    <p class="landingSectionIntro">These are ideas, not rigid itineraries. A private tour can combine several interests and change direction as your group discovers what excites them.</p>
 
-                    <div class="metCardGrid">
-                        <article class="metCard">
+                    <div class="landingCardGrid">
+                        <article class="landingCard">
+                            <span class="landingCardNumber">01</span>
                             <h3>First Visit &amp; Met Highlights</h3>
                             <p>Build a smart route through major collections and iconic works without racing from room to room.</p>
                         </article>
-                        <article class="metCard">
+                        <article class="landingCard">
+                            <span class="landingCardNumber">02</span>
                             <h3>Ancient Egypt</h3>
                             <p>Explore Egyptian belief, power, daily life, burial traditions and monuments including the Temple of Dendur.</p>
                         </article>
-                        <article class="metCard">
+                        <article class="landingCard">
+                            <span class="landingCardNumber">03</span>
                             <h3>Greek &amp; Roman Art</h3>
                             <p>Connect ancient sculpture, pottery and architecture with mythology, politics, everyday life and the stories that still shape popular culture.</p>
                         </article>
-                        <article class="metCard">
+                        <article class="landingCard">
+                            <span class="landingCardNumber">04</span>
                             <h3>European &amp; American Art</h3>
                             <p>Look beyond names and dates to the decisions, personalities, history and controversies behind major works.</p>
                         </article>
-                        <article class="metCard">
+                        <article class="landingCard">
+                            <span class="landingCardNumber">05</span>
                             <h3>Families, Kids &amp; Teens</h3>
                             <p>Adapt the pace and stories to the ages in your group, with questions, drawing and activities when appropriate.</p>
                         </article>
-                        <article class="metCard">
+                        <article class="landingCard">
+                            <span class="landingCardNumber">06</span>
                             <h3>AP&reg; Art History &amp; Students</h3>
-                            <p>Connect classroom study to real objects and visual analysis. <a class="metCardLink" href="AP_Art_History_Tour.htm">See Jared's AP Art History Met Tour</a>.</p>
+                            <p>Connect classroom study to real objects and visual analysis. <a class="landingCardLink" href="AP_Art_History_Tour.htm">See Jared's AP Art History Met Tour</a>.</p>
                         </article>
                     </div>
                 </div>
             </section>
 
             <!-- PHOTO BREAK -->
-            <section class="metPhotoBreak" aria-label="Jared and guests at the Metropolitan Museum of Art">
-                <div class="metInner metPhotoStrip">
-                    <figure class="metPhotoCard">
+            <section class="landingPhotoBreak" aria-label="Jared and guests at the Metropolitan Museum of Art">
+                <div class="landingInner landingPhotoStrip">
+                    <figure class="landingPhotoCard">
                         <img src="images/Met_Museum/Met_Museum_Selfie.jpg" alt="Jared taking a selfie with a family after a private Met Museum tour" />
                         <figcaption>Private, personal and built around your group.</figcaption>
                     </figure>
-                    <figure class="metPhotoCard">
+                    <figure class="landingPhotoCard">
                         <img src="images/Met_Museum/Great Hall Meeting Point with Jared.jpg" alt="Jared at a meeting point inside the Metropolitan Museum of Art" />
                         <figcaption>Meet Jared, make a plan, then make the Met your own.</figcaption>
                     </figure>
-                    <figure class="metPhotoCard metPhotoCardReview">
-                        <img src="images/Met_Museum/Met Tour Evaluation - 12 Year Old.jpg" alt="Written evaluation of Jared's Met Museum tour by a 12-year-old guest" />
-                        <figcaption>A 12-year-old guest's take after touring the Met with Jared.</figcaption>
+                    <figure class="landingPhotoCard">
+                        <img src="images/Met_Museum/Pompeii at Met with Jared.jpg" alt="Jared inside the reconstructed Roman bedroom near Pompeii at the Met" />
+                        <figcaption>Go beyond labels and get close to the stories.</figcaption>
                     </figure>
                 </div>
             </section>
 
             <!-- BOOKS / KIDS -->
-            <section class="metSection metSectionWarm">
-                <div class="metInner">
-                    <h2>For Kids &amp; Young Readers: When Books Come to Life</h2>
-                    <p class="metSectionIntro">Reading before a museum visit can make the galleries feel familiar and exciting. Touring first can work the other way too&mdash;the museum can give a child a new reason to pick up the book afterward.</p>
+            <section class="landingSection landingSectionWarm">
+                <div class="landingInner">
+                    <span class="landingEyebrow">For Families &amp; Young Readers</span>
+                    <h2>When Books Come to Life at the Met</h2>
+                    <p class="landingSectionIntro">Reading before a museum visit can make the galleries feel familiar and exciting. Touring first can work the other way too&mdash;the museum can give a child a new reason to pick up the book afterward.</p>
 
-                    <div class="metFeatureGrid">
-                        <article class="metFeatureCard">
-                            <img src="images/Met_Museum/Met-Museum-with-kids.jpg" alt="Children exploring the Metropolitan Museum of Art with Jared" />
-                            <div class="metFeatureBody">
-                                <span class="metEyebrow">A Classic Met Adventure</span>
+                    <div class="landingFeatureGrid">
+                        <article class="landingFeatureCard">
+                            <div class="metBookVisual">
+                                <div class="metBookCoverWrap">
+                                    <img class="metBookCover" src="images/Met_Museum/Book-Mixed-Up-Files.jpg" alt="Book cover of From the Mixed-Up Files of Mrs. Basil E. Frankweiler" />
+                                </div>
+                                <p class="metBookCredit">Book cover image via Simon &amp; Schuster</p>
+                            </div>
+                            <div class="landingFeatureBody">
+                                <span class="landingFeatureKicker">A Classic Met Adventure</span>
                                 <h3><em>From the Mixed-Up Files of Mrs. Basil E. Frankweiler</em></h3>
                                 <p>Follow in the fictional footsteps of Claudia and Jamie, who secretly make the Met their home and become absorbed in the mystery surrounding a remarkable work of art. Jared can use the story as a jumping-off point for discovery, observation and the idea that a museum can be an adventure rather than an assignment.</p>
                                 <p><strong>Great for families, young readers, teachers and school groups.</strong></p>
@@ -203,15 +283,20 @@
                             </div>
                         </article>
 
-                        <article class="metFeatureCard">
-                            <img src="images/Met_Museum/Grand Column at Met Museum.jpg" alt="Greek and Roman art displayed at the Metropolitan Museum of Art" />
-                            <div class="metFeatureBody">
-                                <span class="metEyebrow">Rick Riordan &amp; Mythology</span>
+                        <article class="landingFeatureCard">
+                            <div class="metBookVisual">
+                                <div class="metBookCoverWrap">
+                                    <img class="metBookCover" src="images/Met_Museum/Book-Lightning-Thief.jpg" alt="Book cover of The Lightning Thief by Rick Riordan" />
+                                </div>
+                                <p class="metBookCredit">Book cover image via Rick Riordan official press materials</p>
+                            </div>
+                            <div class="landingFeatureBody">
+                                <span class="landingFeatureKicker">Rick Riordan &amp; Mythology</span>
                                 <h3>Percy Jackson, Greek Mythology &amp; the Met</h3>
                                 <p>Rick Riordan has written that the idea for Percy Jackson traces back to a visit to the Met and the ancient Greek grave monument of a youth often identified as Megakles. Percy himself begins discovering his extraordinary identity during a Met field trip. Jared can connect that story to Greek and Roman art, gods, heroes and monsters throughout the galleries.</p>
                                 <p>Fans of Riordan's <em>The Red Pyramid</em> can also connect its interest in Egyptian mythology to the Met's Egyptian collection, without pretending the novel itself begins at the Met.</p>
                                 <p><a href="https://www.metmuseum.org/perspectives/rick-riordan" target="_blank" rel="noopener">Read Rick Riordan's account of Percy's Met origins</a></p>
-                                <p class="metSmallNote">Specific objects and galleries are subject to museum availability.</p>
+                                <p class="landingSmallNote">Specific objects and galleries are subject to museum availability.</p>
                             </div>
                         </article>
                     </div>
@@ -219,15 +304,15 @@
             </section>
 
             <!-- ODYSSEY -->
-            <section class="metSection metSectionAlt">
-                <div class="metInner metOdyssey">
+            <section class="landingSection landingSectionAlt">
+                <div class="landingInner metOdyssey">
                     <div>
-                        <span class="metEyebrow">A Timely New Tour Idea</span>
+                        <span class="landingEyebrow">A Timely New Tour Idea</span>
                         <h2>The Odyssey &amp; Greek Mythology at the Met</h2>
                         <p>Christopher Nolan's 2026 film has brought a new wave of attention to Homer's <em>Odyssey</em>. The Met offers a chance to step away from the screen and see how ancient artists pictured parts of Odysseus's world more than two thousand years ago.</p>
                         <p>As of August 2026, the Met's own collection records list several Odyssey-related works as on view, including a Corinthian vase showing the blinding of Polyphemos, a plaque showing Odysseus returning to Penelope, another showing Eurykleia recognizing Odysseus by his scar, and an archer the Met identifies as <em>probably</em> Odysseus.</p>
                         <p>Jared can develop these objects into a Greek mythology thread within a private tour, connecting the ancient story to art, storytelling and the renewed interest surrounding the film.</p>
-                        <p class="metSmallNote"><strong>Important:</strong> museum displays can change. Jared should confirm current gallery availability when planning a tour rather than promise a fixed object list.</p>
+                        <p class="landingSmallNote"><strong>Important:</strong> museum displays can change. Jared should confirm current gallery availability when planning a tour rather than promise a fixed object list.</p>
                     </div>
                     <div class="metOdysseyImages">
                         <a href="https://www.metmuseum.org/art/collection/search/244857" target="_blank" rel="noopener"><img src="images/Met_Museum/Odyssey/Odyssey-Polyphemos-Met-244857.jpg" alt="Ancient Greek Corinthian vase showing the blinding of Polyphemos, Metropolitan Museum of Art Open Access image" /></a>
@@ -235,39 +320,39 @@
                         <a href="https://www.metmuseum.org/art/collection/search/251812" target="_blank" rel="noopener"><img src="images/Met_Museum/Odyssey/Odyssey-Eurykleia-Odysseus-Met-251812.jpg" alt="Ancient Greek terracotta plaque showing Eurykleia recognizing Odysseus, Metropolitan Museum of Art Open Access image" /></a>
                     </div>
                 </div>
-                <div class="metInner">
-                    <p class="metSmallNote">Odyssey artwork images: The Metropolitan Museum of Art Open Access / Public Domain. Click an image for the Met's current object record.</p>
+                <div class="landingInner">
+                    <p class="landingSmallNote">Odyssey artwork images: The Metropolitan Museum of Art Open Access / Public Domain. Click an image for the Met's current object record.</p>
                 </div>
             </section>
 
             <!-- DISCOVER -->
-            <section class="metSection">
-                <div class="metInner">
+            <section class="landingSection">
+                <div class="landingInner">
                     <h2>What Might Come to Life on Your Tour?</h2>
-                    <p class="metSectionIntro">The point is not to check off masterpieces. It is to understand why an object is interesting and how it connects to bigger stories.</p>
+                    <p class="landingSectionIntro">The point is not to check off masterpieces. It is to understand why an object is interesting and how it connects to bigger stories.</p>
 
-                    <div class="metDiscoverGrid">
-                        <article class="metDiscoverCard">
+                    <div class="landingDiscoverGrid">
+                        <article class="landingDiscoverCard">
                             <img src="images/Met_Museum/Temple of Dendur.jpg" alt="Temple of Dendur at the Metropolitan Museum of Art" />
                             <div><strong>Ancient Egypt</strong><br />Religion, politics, preservation and one of the Met's best-known spaces.</div>
                         </article>
-                        <article class="metDiscoverCard">
+                        <article class="landingDiscoverCard">
                             <img src="images/Met_Museum/Armor at the Met Museum.jpg" alt="Historic armor displayed at the Metropolitan Museum of Art" />
                             <div><strong>Arms &amp; Armor</strong><br />Where engineering, craftsmanship, status and spectacle meet.</div>
                         </article>
-                        <article class="metDiscoverCard">
-                            <img src="images/Met_Museum/Pompeii at Met with Jared.jpg" alt="Jared in the reconstructed Roman bedroom near Pompeii at the Met" />
+                        <article class="landingDiscoverCard">
+                            <img src="images/Met_Museum/Pompeii Room at Met Museum Open Access.jpg" alt="Roman bedroom wall paintings from the Villa of P. Fannius Synistor at Boscoreale, near Pompeii, at the Metropolitan Museum of Art" />
                             <div><strong>Rome &amp; Pompeii</strong><br />Step into an ancient interior and talk about perspective, wealth and daily life.</div>
                         </article>
-                        <article class="metDiscoverCard">
+                        <article class="landingDiscoverCard">
                             <img src="images/Met_Museum/Washington Crossing Delaware at Met Museum.jpg" alt="Washington Crossing the Delaware at the Metropolitan Museum of Art" />
                             <div><strong>American Stories</strong><br />Look at how art creates memory, identity and political meaning.</div>
                         </article>
-                        <article class="metDiscoverCard">
+                        <article class="landingDiscoverCard">
                             <img src="images/Met_Museum/Jackson Pollack at Met Museum.jpg" alt="Jackson Pollock's Autumn Rhythm at the Metropolitan Museum of Art" />
                             <div><strong>Modern Art</strong><br />Use works like Pollock's <em>Autumn Rhythm</em> to connect art to its moment in American history and culture.</div>
                         </article>
-                        <article class="metDiscoverCard">
+                        <article class="landingDiscoverCard">
                             <img src="images/Met_Museum/Met Museum Storage.jpg" alt="Visible storage displays at the Metropolitan Museum of Art" />
                             <div><strong>Behind the Collection</strong><br />Think about what gets displayed, what gets stored, and how museums build and preserve collections.</div>
                         </article>
@@ -276,71 +361,81 @@
             </section>
 
             <!-- REVIEW INSIGHTS -->
-            <section class="metSection metReviewsSection">
-                <div class="metInner">
-                    <span class="metEyebrow">What Guests Consistently Say</span>
-                    <h2>What Guests Say About Touring the Met with Jared</h2>
-                    <p class="metSectionIntro">Jared's reviews across multiple platforms repeat the same strengths. These are paraphrased review patterns, not direct quotations.</p>
+            <section class="landingSection landingReviewsSection">
+                <div class="landingInner">
+                    <div class="landingReviewHeadingRow">
+                        <div>
+                            <span class="landingEyebrow">What Guests Consistently Say</span>
+                            <h2>Why People Like Touring the Met with Jared</h2>
+                        </div>
+                    </div>
+                    <p class="landingSectionIntro">The same strengths show up again and again in Jared's reviews across different platforms and different kinds of guests.</p>
 
-                    <div class="metReviewScroller" aria-label="Recurring themes in Jared's tour reviews">
-                        <article class="metReviewCard metReviewGreen">
-                            <div class="metReviewIcon" aria-hidden="true">&#10003;</div>
+                    <blockquote class="landingReviewQuote">
+                        <p>&ldquo;Jared was fabulous!&rdquo; &nbsp; &ldquo;Wonderful info tailored to us&rdquo; &nbsp; &ldquo;great in-depth knowledge&rdquo; &nbsp; &ldquo;Our 13 year old loved the interaction&rdquo;</p>
+                        <cite>&mdash; C.B., Met Tour, June 2025</cite>
+                    </blockquote>
+
+                    <div class="landingReviewScrollerWrap">
+                        <button class="landingReviewArrow landingReviewArrowLeft" type="button" aria-label="Scroll review themes left" onclick="scrollLandingReviews(-360);">&#8592;</button>
+
+                        <div id="landingReviewScroller" class="landingReviewScroller" aria-label="Recurring themes in Jared's tour reviews">
+                        <article class="landingReviewCard">
+                            <span class="landingReviewIcon" aria-hidden="true">&#9733;</span>
                             <h3>Deep Knowledge</h3>
                             <p>Reviewers repeatedly describe Jared as knowledgeable and expert, with a wealth of information about art, history, architecture and hidden details.</p>
                         </article>
-                        <article class="metReviewCard metReviewOrange">
-                            <div class="metReviewIcon" aria-hidden="true">&#10003;</div>
+                        <article class="landingReviewCard">
+                            <span class="landingReviewIcon" aria-hidden="true">&#9733;</span>
                             <h3>Makes the Met Understandable</h3>
                             <p>Museum guests especially value how he makes large collections feel easier to understand, less overwhelming and more meaningful.</p>
                         </article>
-                        <article class="metReviewCard metReviewCream">
-                            <div class="metReviewIcon" aria-hidden="true">&#10003;</div>
+                        <article class="landingReviewCard">
+                            <span class="landingReviewIcon" aria-hidden="true">&#9733;</span>
                             <h3>Brings It to Life</h3>
                             <p>Stories and context help visitors understand what they are seeing and notice details they probably would have missed on their own.</p>
                         </article>
-                        <article class="metReviewCard metReviewGreen">
-                            <div class="metReviewIcon" aria-hidden="true">&#10003;</div>
+                        <article class="landingReviewCard">
+                            <span class="landingReviewIcon" aria-hidden="true">&#9733;</span>
                             <h3>Truly Customized</h3>
                             <p>Jared listens, adjusts the route and pace, and makes the experience feel built around the interests of the actual group in front of him.</p>
                         </article>
-                        <article class="metReviewCard metReviewOrange">
-                            <div class="metReviewIcon" aria-hidden="true">&#10003;</div>
+                        <article class="landingReviewCard">
+                            <span class="landingReviewIcon" aria-hidden="true">&#9733;</span>
                             <h3>Great With Families</h3>
                             <p>Reviews repeatedly praise his ability to engage children, teens, grandparents, students and mixed-age groups without losing the adults.</p>
                         </article>
-                        <article class="metReviewCard metReviewCream">
-                            <div class="metReviewIcon" aria-hidden="true">&#10003;</div>
+                        <article class="landingReviewCard">
+                            <span class="landingReviewIcon" aria-hidden="true">&#9733;</span>
                             <h3>Personable &amp; Fun</h3>
                             <p>Guests consistently describe him as personable, flexible and funny&mdash;knowledgeable without making the experience feel like a lecture.</p>
                         </article>
-                        <article class="metReviewCard metReviewGreen">
-                            <div class="metReviewIcon" aria-hidden="true">&#10003;</div>
+                        <article class="landingReviewCard">
+                            <span class="landingReviewIcon" aria-hidden="true">&#9733;</span>
                             <h3>Uses Your Time Well</h3>
                             <p>Planning, pacing, routing and practical help are part of the value, especially when visitors have limited time and a long wish list.</p>
                         </article>
+                        </div>
+
+                        <button class="landingReviewArrow landingReviewArrowRight" type="button" aria-label="Scroll review themes right" onclick="scrollLandingReviews(360);">&#8594;</button>
                     </div>
-                    <p class="metScrollHint">Swipe or scroll to see more review themes &rarr;</p>
+                    <p class="landingReviewNote">The cards above summarize recurring review patterns; they are not presented as direct quotations. Use the arrows on desktop or swipe directly on touch screens.</p>
                     <p><a href="testimonials.htm#individuals"><strong>Read Jared's tour reviews</strong></a></p>
                 </div>
             </section>
 
-            <!-- PRACTICAL -->
-            <section class="metSection metSectionAlt">
-                <div class="metInner metPractical">
-                    <h2>Your Tour, Your Pace</h2>
-                    <div class="metFacts">
-                        <div class="metFact"><strong>Private &amp; customized</strong><br />Build the visit around your interests and priorities.</div>
-                        <div class="metFact"><strong>Families welcome</strong><br />Adjust stories, pace and activities to different ages.</div>
-                        <div class="metFact"><strong>Students &amp; educators</strong><br />Connect museum objects to curriculum, literature and history.</div>
-                        <div class="metFact"><strong>Current museum rules</strong><br />Jared will explain ticketing and guide requirements when you book.</div>
-                    </div>
-                </div>
-
-                <div class="metInner metFaq">
+            <!-- FAQ -->
+            <section class="landingSection landingSectionAlt">
+                <div class="landingInner landingFaq">
+                    <span class="landingEyebrow">Before You Visit</span>
                     <h2>Private Met Tour FAQ</h2>
                     <details>
                         <summary>Can Jared customize the Met tour around our interests?</summary>
                         <p>Yes. Customization is one of the main reasons to book privately. Tell Jared what your group enjoys, or let him create a balanced first-time route and adjust it as the tour develops.</p>
+                    </details>
+                    <details>
+                        <summary>How long is a private Met Museum tour?</summary>
+                        <p>Most of Jared's tours are about three hours, but a private Met tour can be shorter or longer depending on your group, interests and pace. A first-time highlights tour may cover several collections, while an art-history or mythology-focused visit may spend more time in fewer galleries.</p>
                     </details>
                     <details>
                         <summary>Is this a good Met Museum tour for kids and teenagers?</summary>
@@ -355,21 +450,70 @@
                         <p>There is no single perfect list. Jared can build a highlights route that gives you variety and context while avoiding the common mistake of trying to see too much.</p>
                     </details>
                     <details>
-                        <summary>Do museum tickets and private-guide rules change?</summary>
-                        <p>They can. Jared will explain the current ticketing, meeting and private-guide requirements when arranging your tour.</p>
+                        <summary>Is Met admission included in Jared's tour price?</summary>
+                        <p>Museum admission is separate from Jared's guiding fee unless something different is specifically arranged. Third-party guided visits also require advance arrangements with the Met, so Jared will explain the current ticketing, meeting and group-visit requirements when planning your tour.</p>
+                    </details>
+                    <details>
+                        <summary>Can we combine the Met with Central Park or another part of New York?</summary>
+                        <p>Often, yes. Because the tour is private, Jared can help build a longer itinerary combining the Met with nearby Central Park, Museum Mile or another NYC interest, depending on your available time, interests and pace.</p>
+                    </details>
+                    <details>
+                        <summary>Is the Met tour suitable for someone who needs a slower pace, breaks or wheelchair access?</summary>
+                        <p>Yes. Tell Jared about mobility or pacing needs before the tour so he can plan an appropriate route and allow time for breaks. The Met provides step-free access and wheelchair-accessible routes, and manual wheelchairs are available on a first-come, first-served basis.</p>
+                    </details>
+                    <details>
+                        <summary>Can Jared guide us through a special exhibition at the Met?</summary>
+                        <p>Not always. The Met does not currently permit third-party lecturing in special exhibitions, and access to particular galleries can change. Jared will plan the tour around collections and galleries where private guiding is permitted and confirm current conditions when arranging your visit.</p>
+                    </details>
+                    <details>
+                        <summary>Can we take photos during the tour?</summary>
+                        <p>Usually, yes. The Met currently allows non-flash photography and video for personal, non-commercial use in most galleries unless otherwise noted. Flash, selfie sticks, tripods, monopods and professional video equipment are not permitted without prior approval, and some works or galleries may prohibit photography.</p>
                     </details>
                 </div>
             </section>
 
+            <!-- RELATED TOURS -->
+            <section class="landingSection landingRelatedSection">
+                <div class="landingInner">
+                    <h2>Related Tours</h2>
+                    <div class="landingRelatedGrid">
+                        <article class="landingRelatedCard">
+                            <a class="landingRelatedImage" href="JohnLennonTheNYCTour.htm"><img src="images/Imagine-Central-Park-Strawberry-Fields.jpg" alt="Strawberry Fields in Central Park on Jared's John Lennon NYC tour" /></a>
+                            <h3><a href="JohnLennonTheNYCTour.htm">John Lennon in NYC</a></h3>
+                            <p>Music history, Strawberry Fields and the New York stories behind Lennon's life in the city.</p>
+                            <a class="landingRelatedLink" href="JohnLennonTheNYCTour.htm">Explore the tour &rarr;</a>
+                        </article>
+                        <article class="landingRelatedCard">
+                            <a class="landingRelatedImage" href="Gilded-Age-Tour.html"><img src="images/Lennon-Tour/Dakota 1890.jpg" alt="The Dakota in historic New York on Jared's Gilded Age tour" /></a>
+                            <h3><a href="Gilded-Age-Tour.html">The Gilded Age</a></h3>
+                            <p>Architecture, literature, wealth and the Fifth Avenue world that shaped old New York.</p>
+                            <a class="landingRelatedLink" href="Gilded-Age-Tour.html">Explore the tour &rarr;</a>
+                        </article>
+                        <article class="landingRelatedCard">
+                            <a class="landingRelatedImage" href="custom_tours.htm"><img src="images/Crowd1.jpg" alt="Guests enjoying a customized private New York City tour with Jared" /></a>
+                            <h3><a href="custom_tours.htm">Custom NYC Tours</a></h3>
+                            <p>Build a private day around the neighborhoods, history, food, art or stories your group cares about.</p>
+                            <a class="landingRelatedLink" href="custom_tours.htm">Plan a custom tour &rarr;</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             <!-- FINAL CTA -->
-            <section class="metSection">
-                <div class="metInner metFinalCta">
+            <section class="landingSection landingFinalSection">
+                <div class="landingInner landingFinalCta">
                     <h2>Ready to Make the Met Your Met?</h2>
                     <p>Tell Jared who is coming and what interests you. He'll help shape a private museum experience around your group.</p>
-                    <div class="metCtas" style="justify-content:center;">
-                        <a class="metButton metButtonPrimary" href="tourBooking.aspx">Book Your Private Met Tour</a>
+                    <div class="landingCtas landingCtasCentered">
+                        <a class="landingButton landingButtonPrimary" href="tourBooking.aspx">Book Your Private Met Tour</a>
                     </div>
-                    <p>Email <a href="mailto:Jared@JaredtheNYCTourGuide.com?subject=Private Met Museum Tour">Jared@JaredTheNYCTourGuide.com</a> &nbsp;|&nbsp; Call (917) 533-1057</p>
+                    <p class="landingFinalContact">
+                        <span class="landingFinalContactLabel">Email</span>
+                        <a href="mailto:Jared@JaredtheNYCTourGuide.com?subject=Private Met Museum Tour">Jared@JaredTheNYCTourGuide.com</a>
+                        <span class="landingFinalContactDivider" aria-hidden="true">|</span>
+                        <span class="landingFinalContactLabel">Call</span>
+                        <a href="tel:+19175331057">(917) 533-1057</a>
+                    </p>
                 </div>
             </section>
         </main>

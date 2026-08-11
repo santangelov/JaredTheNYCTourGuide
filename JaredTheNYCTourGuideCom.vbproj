@@ -280,6 +280,8 @@
     <Content Include="images\Manhattan-Bridge-DUMBO.jpeg" />
     <Content Include="images\Met-Museum-with-kids.jpg" />
     <Content Include="images\Met_Museum\Armor at the Met Museum.jpg" />
+    <Content Include="images\Met_Museum\Book-Lightning-Thief.jpg" />
+    <Content Include="images\Met_Museum\Book-Mixed-Up-Files.jpg" />
     <Content Include="images\Met_Museum\Christmas at Met Museum 1.jpg" />
     <Content Include="images\Met_Museum\Domes and Flowers.jpg" />
     <Content Include="images\Met_Museum\Egyptian Art at Met Museum.jpg" />
@@ -289,6 +291,7 @@
     <Content Include="images\Met_Museum\Jackson Pollack at Met Museum.jpg" />
     <Content Include="images\Met_Museum\Met Museum at Night.jpg" />
     <Content Include="images\Met_Museum\Met Museum Private Tour 2025.jpg" />
+    <Content Include="images\Met_Museum\Met Museum Private Tour 2025.png" />
     <Content Include="images\Met_Museum\Met Museum Storage.jpg" />
     <Content Include="images\Met_Museum\Met Tour Evaluation - 12 Year Old.jpg" />
     <Content Include="images\Met_Museum\Met Tour Treasure - Ugolino and His Sons.jpg" />
@@ -300,6 +303,7 @@
     <Content Include="images\Met_Museum\Odyssey\Odyssey-Odysseus-Penelope-Met-253053.jpg" />
     <Content Include="images\Met_Museum\Odyssey\Odyssey-Polyphemos-Met-244857.jpg" />
     <Content Include="images\Met_Museum\Pompeii at Met with Jared.jpg" />
+    <Content Include="images\Met_Museum\Pompeii Room at Met Museum Open Access.jpg" />
     <Content Include="images\Met_Museum\Pompeii Room at Met Museum.jpg" />
     <Content Include="images\Met_Museum\statue of Egyptian Queen Hapshetsut.jpg" />
     <Content Include="images\Met_Museum\Suits of Armor at Met Museum.jpg" />
@@ -421,6 +425,7 @@
     <Content Include="Styles\extensions\jquery.mmenu.themes.css" />
     <Content Include="Styles\extensions\jquery.mmenu.widescreen.css" />
     <Content Include="Styles\jared.css" />
+    <Content Include="Styles\landing.css" />
     <Content Include="Styles\jquery.mmenu.all.css" />
     <Content Include="Styles\jquery.mmenu.css" />
     <Content Include="Styles\jquery.mmenu.oncanvas.css" />
