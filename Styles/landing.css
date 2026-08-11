@@ -470,6 +470,10 @@ body {
     display: block;
 }
 
+.landingPhotoCardPortraitMobile img {
+    object-position: center 18%;
+}
+
 .landingPhotoCard figcaption {
     position: absolute;
     left: 0;
@@ -622,6 +626,11 @@ body {
     border-radius: 9px;
     border: 3px solid #fff;
     box-shadow: 0 5px 14px rgba(0,0,0,0.10);
+}
+
+.metOdysseyIllustration img {
+    object-fit: contain;
+    background: #e8ece9;
 }
 
 /* ---------------------------------------------------------
@@ -1207,6 +1216,17 @@ body {
     .landingPhotoCard:last-child {
         grid-column: auto;
         height: 250px;
+    }
+
+    .landingPhotoCardPortraitMobile,
+    .landingPhotoCardPortraitMobile:last-child {
+        height: auto;
+    }
+
+    .landingPhotoCardPortraitMobile img {
+        height: auto;
+        object-fit: contain;
+        object-position: center;
     }
 
     .landingFeatureCard {
