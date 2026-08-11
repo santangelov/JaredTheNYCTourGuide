@@ -412,13 +412,18 @@ body {
     box-shadow: none;
 }
 
-.landingCardNumber {
-    display: block;
+.landingCardIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
     margin-bottom: 13px;
-    color: #929b94;
-    font-size: 0.76em;
-    font-weight: 700;
-    letter-spacing: 0.12em;
+    border-radius: 50%;
+    background: #eaf4f5;
+    color: #2f7f8d;
+    font-size: 1.05em;
+    line-height: 1;
 }
 
 .landingCard h3 {
@@ -605,7 +610,7 @@ body {
 
 .metOdysseyImages {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 11px;
 }
 
@@ -617,11 +622,6 @@ body {
     border-radius: 9px;
     border: 3px solid #fff;
     box-shadow: 0 5px 14px rgba(0,0,0,0.10);
-}
-
-.metOdysseyImages img:first-child {
-    grid-column: 1 / -1;
-    height: 280px;
 }
 
 /* ---------------------------------------------------------
@@ -1226,8 +1226,7 @@ body {
         height: auto;
     }
 
-    .metOdysseyImages img,
-    .metOdysseyImages img:first-child {
+    .metOdysseyImages img {
         height: auto;
     }
 
