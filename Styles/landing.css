@@ -609,18 +609,20 @@ body {
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     gap: 36px;
-    align-items: center;
+    align-items: start;
 }
 
 .metOdysseyImages {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 11px;
+    align-self: start;
+    margin-top: 84px;
 }
 
 .metOdysseyImages img {
     width: 100%;
-    height: 220px;
+    height: 260px;
     object-fit: cover;
     display: block;
     border-radius: 9px;
@@ -998,7 +1000,7 @@ body {
 }
 
 .landingFinalContactDivider {
-    color: rgba(255, 255, 255, 0.36);
+    color: rgba(255, 255,255,0.36);
 }
 
 .landingPage .landingFinalCta .landingFinalContact a:link,
@@ -1011,7 +1013,7 @@ body {
 
 .landingPage .landingFinalCta .landingFinalContact a:link,
 .landingPage .landingFinalCta .landingFinalContact a:visited {
-    text-decoration-color: rgba(255, 255, 255, 0.56);
+    text-decoration-color: rgba(255,255,255,0.56);
 }
 
 .landingPage .landingFinalCta .landingFinalContact a:hover,
@@ -1106,6 +1108,10 @@ body {
     .landingFeatureCard {
         grid-template-columns: 0.9fr 1.1fr;
         gap: 30px;
+    }
+
+    .metOdysseyImages {
+        margin-top: 8px;
     }
 
     .landingReviewScroller {
@@ -1244,6 +1250,10 @@ body {
     .landingFeatureCard img,
     .landingDiscoverCard img {
         height: auto;
+    }
+
+    .metOdysseyImages {
+        margin-top: 4px;
     }
 
     .metOdysseyImages img {
