@@ -68,7 +68,7 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Home","item":"https://jaredthenyctourguide.com/"},
-    {"@type":"ListItem","position":2,"name":"Blog","item":"https://jaredthenyctourguide.com/blog"},
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://jaredthenyctourguide.com/blog/"},
     {"@type":"ListItem","position":3,"name":"Post"}
   ]
 }
@@ -90,7 +90,7 @@
               <li><a href="/destinations.htm">DESTINATIONS</a></li>
               <li><a href="/custom_tours.htm">CUSTOM TOURS</a></li>
               <li><a href="/testimonials.htm">TESTIMONIALS</a></li>
-              <li><a href="/blog">BLOG</a></li>
+              <li><a href="/blog/">BLOG</a></li>
               <li><a href="/aboutJared.htm">ABOUT JARED</a></li>
               <li><a href="/faqs.htm">FAQS</a></li>
               <li><a href="/tourBooking.aspx">BOOK YOUR TOUR</a></li>
@@ -104,7 +104,7 @@
       
       <!-- START SHAFT -->
       <div class="shaftWrapper">
-   		<h1><a href="/blog" style="color:#3C5830;"><uc1:blogTitle ID="blogTitle1" runat="server" BlogCode="jared"  /></a></h1>
+   		<h1><a href="/blog/" style="color:#3C5830;"><uc1:blogTitle ID="blogTitle1" runat="server" BlogCode="jared"  /></a></h1>
           
           <div class="blogLeft">
             <uc1:blogPost ID="blogPost1" runat="server" VirtualPath="/#/VIRTUALPATH/#/" BlogCode="jared" />
@@ -142,7 +142,7 @@
             <li><a href="/destinations.htm">DESTINATIONS</a></li>
             <li><a href="/custom_tours.htm">CUSTOM TOURS</a></li>
             <li><a href="/testimonials.htm">TESTIMONIALS</a></li>
-            <li><a href="/blog">BLOG</a></li>
+            <li><a href="/blog/">BLOG</a></li>
             <li><a href="/aboutJared.htm">ABOUT JARED</a></li>
             <li><a href="/faqs.htm">FAQS</a></li>
             <li><a href="/tourBooking.aspx">BOOK YOUR TOUR</a></li>
