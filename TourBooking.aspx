@@ -94,7 +94,7 @@
 <div class="bodyWrapper">
 <!-- START BANNER -->
 <div class="bannerWrapper">
-<a href="index.htm"><img alt="Jared The NYC Tour Guide&lt;sup&gt;®&lt;/sup&gt; | Custom walking tours of New York City" border="0" src="images/banner-2023.png?x"/></a>
+<a href="/"><img alt="Jared The NYC Tour Guide&lt;sup&gt;®&lt;/sup&gt; | Custom walking tours of New York City" border="0" src="images/banner-2023.png?x"/></a>
 </div>
 <!-- END BANNER -->
 <!-- START MENU -->
@@ -103,7 +103,7 @@
 <li><a href="destinations.htm">DESTINATIONS</a></li>
 <li><a href="custom_tours.htm">CUSTOM TOURS</a></li>
 <li><a href="testimonials.htm">TESTIMONIALS</a></li>
-<li><a href="blog">BLOG</a></li>
+<li><a href="/blog/">BLOG</a></li>
 <li><a href="aboutJared.htm">ABOUT JARED</a></li>
 <li><a href="faqs.htm">FAQS</a></li>
 <li><a aria-current="page" class="active" href="tourBooking.aspx">BOOK YOUR TOUR</a></li>
@@ -205,7 +205,7 @@
                 span.innerHTML = `<a href="mailto:${email}">${email}</a>`;
             </script>
 <br/>
-<a href="index.htm">Home</a> | <a href="destinations.htm">Destinations</a> | <a href="custom_tours.htm">Custom Tours</a> | <a href="testimonials.htm">Testimonials</a> | <a href="aboutJared.htm">About Jared</a> | <a href="faqs.htm">FAQs</a> | <a href="tourBooking.aspx">Book Your Tour</a> | <a href="contact.htm">Contact</a> | <a href="terms.htm">Terms &amp; Conditions</a> | <a href="privacy.htm">Privacy Policy</a>
+<a href="/">Home</a> | <a href="destinations.htm">Destinations</a> | <a href="custom_tours.htm">Custom Tours</a> | <a href="testimonials.htm">Testimonials</a> | <a href="aboutJared.htm">About Jared</a> | <a href="faqs.htm">FAQs</a> | <a href="tourBooking.aspx">Book Your Tour</a> | <a href="contact.htm">Contact</a> | <a href="terms.htm">Terms &amp; Conditions</a> | <a href="privacy.htm">Privacy Policy</a>
 </div>
 <!-- END FOOTER -->
 </div>
@@ -216,7 +216,7 @@
 <li><a href="destinations.htm">DESTINATIONS</a></li>
 <li><a href="custom_tours.htm">CUSTOM TOURS</a></li>
 <li><a href="testimonials.htm">TESTIMONIALS</a></li>
-<li><a href="blog">BLOG</a></li>
+<li><a href="/blog/">BLOG</a></li>
 <li><a href="aboutJared.htm">ABOUT JARED</a></li>
 <li><a href="faqs.htm">FAQS</a></li>
 <li><a href="tourBooking.aspx">BOOK YOUR TOUR</a></li>
