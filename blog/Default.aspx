@@ -13,13 +13,13 @@
 	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=4.0 user-scalable=yes" />    
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
     <meta name="description" content="Read the official Jared The NYC Tour Guide blog for New York City history, tour updates, and local stories from the streets of NYC." />
-    <link rel="canonical" href="https://jaredthenyctourguide.com/blog" />
+    <link rel="canonical" href="https://jaredthenyctourguide.com/blog/" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Blog",
       "name": "Jared The NYC Tour Guide Blog",
-      "url": "https://jaredthenyctourguide.com/blog",
+      "url": "https://jaredthenyctourguide.com/blog/",
       "publisher": {"@id": "https://jaredthenyctourguide.com/#organization"}
     }
     </script>
@@ -55,7 +55,7 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type":"ListItem","position":1,"name":"Home","item":"https://jaredthenyctourguide.com/"},
-    {"@type":"ListItem","position":2,"name":"Blog","item":"https://jaredthenyctourguide.com/blog"}
+    {"@type":"ListItem","position":2,"name":"Blog","item":"https://jaredthenyctourguide.com/blog/"}
   ]
 }
 </script>
@@ -76,7 +76,7 @@
               <li><a href="/destinations.htm">DESTINATIONS</a></li>
               <li><a href="/custom_tours.htm">CUSTOM TOURS</a></li>
               <li><a href="/testimonials.htm">TESTIMONIALS</a></li>
-              <li><a href="/blog">BLOG</a></li>
+              <li><a href="/blog/">BLOG</a></li>
               <li><a href="/aboutJared.htm">ABOUT JARED</a></li>
               <li><a href="/faqs.htm">FAQS</a></li>
               <li><a href="/tourBooking.aspx">BOOK YOUR TOUR</a></li>
@@ -130,7 +130,7 @@
             <li><a href="/destinations.htm">DESTINATIONS</a></li>
             <li><a href="/custom_tours.htm">CUSTOM TOURS</a></li>
             <li><a href="/testimonials.htm">TESTIMONIALS</a></li>
-            <li><a href="/blog">BLOG</a></li>
+            <li><a href="/blog/">BLOG</a></li>
             <li><a href="/aboutJared.htm">ABOUT JARED</a></li>
             <li><a href="/faqs.htm">FAQS</a></li>
             <li><a href="/tourBooking.aspx">BOOK YOUR TOUR</a></li>
