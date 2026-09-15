@@ -439,6 +439,7 @@
     <Content Include="TourBooking.aspx" />
     <Content Include="tours\nyc-patriotic-tours.htm" />
     <Content Include="tours\vocabulary-builder-tour.htm" />
+    <Content Include="videos\met-private-tour-experience.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
