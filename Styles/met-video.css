@@ -1,0 +1,199 @@
+/* Met tour video section.
+   Kept page-specific so the shared landing-page styles remain unchanged. */
+
+.metVideoSection {
+    position: relative;
+    overflow: hidden;
+    padding: 66px 24px;
+    background: linear-gradient(135deg, #eef3ef 0%, #f7f8f6 58%, #edf3f3 100%);
+    border-top: 1px solid #dfe6e0;
+    border-bottom: 1px solid #dfe6e0;
+}
+
+.metVideoSection::before {
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    right: -125px;
+    top: -145px;
+    border-radius: 50%;
+    background: rgba(47, 127, 141, 0.07);
+    pointer-events: none;
+}
+
+.metVideoLayout {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 390px);
+    gap: 64px;
+    align-items: center;
+}
+
+.metVideoCopy {
+    max-width: 690px;
+}
+
+.metVideoCopy h2 {
+    max-width: 650px;
+    margin-bottom: 18px;
+    font-family: Constantia, "Palatino Linotype", Palatino, Georgia, serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+}
+
+.metVideoLead {
+    max-width: 660px;
+    margin-bottom: 17px !important;
+    color: #38413b;
+    font-size: 1.2em;
+    line-height: 1.58;
+}
+
+.metVideoCopy > p:not(.metVideoLead) {
+    max-width: 660px;
+    color: #555b56;
+}
+
+.metVideoHighlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 23px 0 3px 0;
+}
+
+.metVideoHighlights span {
+    display: inline-block;
+    padding: 7px 11px;
+    border: 1px solid #cedbd1;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    color: #315136;
+    font-size: 0.84em;
+    line-height: 1.2;
+    font-weight: 650;
+}
+
+.metVideoFigure {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.metVideoFrameShell {
+    position: relative;
+    padding: 10px;
+    border-radius: 24px;
+    background: #263c2c;
+    box-shadow: 0 22px 42px rgba(35, 57, 41, 0.20);
+}
+
+.metVideoFrameShell::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 28px;
+    right: -24px;
+    bottom: -24px;
+    left: 30px;
+    border-radius: 24px;
+    background: #d9e4dd;
+}
+
+.metVideoFrame {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 9 / 16;
+    border-radius: 16px;
+    background: #111;
+}
+
+.metVideoFrame video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    background: #111;
+}
+
+.metVideoFigure figcaption {
+    margin-top: 18px;
+    color: #69706b;
+    font-size: 0.82em;
+    line-height: 1.45;
+    text-align: center;
+}
+
+.metVideoFigure figcaption span {
+    display: block;
+}
+
+.metVideoFigure .metVideoPlaybackNote {
+    margin-top: 4px;
+    color: #7b817c;
+}
+
+.metVideoFigure figcaption a {
+    font-weight: 650;
+}
+
+@media screen and (max-width: 900px) {
+    .metVideoLayout {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .metVideoCopy {
+        max-width: 760px;
+    }
+
+    .metVideoFigure {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .metVideoSection {
+        padding: 45px 18px 50px 18px;
+    }
+
+    .metVideoLayout {
+        gap: 32px;
+    }
+
+    .metVideoCopy h2 {
+        font-size: 1.95em;
+    }
+
+    .metVideoLead {
+        font-size: 1.08em;
+    }
+
+    .metVideoHighlights {
+        margin-top: 20px;
+    }
+
+    .metVideoFigure {
+        width: calc(100% - 16px);
+        max-width: 340px;
+    }
+
+    .metVideoFrameShell {
+        padding: 7px;
+        border-radius: 19px;
+    }
+
+    .metVideoFrameShell::before {
+        right: -14px;
+        bottom: -16px;
+        left: 20px;
+        border-radius: 20px;
+    }
+
+    .metVideoFrame {
+        border-radius: 13px;
+    }
+}
