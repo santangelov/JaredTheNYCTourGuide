@@ -431,6 +431,7 @@
     <Content Include="Styles\jquery.mmenu.all.css" />
     <Content Include="Styles\jquery.mmenu.css" />
     <Content Include="Styles\jquery.mmenu.oncanvas.css" />
+    <Content Include="Styles\met-video.css" />
     <Content Include="Styles\pmBlog.css" />
     <Content Include="Styles\standardforms.css" />
     <Content Include="Styles\testimonials-modern.css" />
