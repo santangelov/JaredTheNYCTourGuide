@@ -631,34 +631,18 @@
                 return;
             }
 
-            var startTimer = null;
-            var sufficientlyVisible = false;
-
-            function clearStartTimer() {
-                if (startTimer !== null) {
-                    window.clearTimeout(startTimer);
-                    startTimer = null;
-                }
-            }
-
             var observer = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
-                    sufficientlyVisible = entry.isIntersecting && entry.intersectionRatio >= 0.6;
-                    clearStartTimer();
+                    var sufficientlyVisible = entry.isIntersecting && entry.intersectionRatio >= 0.6;
 
-                    if (sufficientlyVisible) {
-                        startTimer = window.setTimeout(function () {
-                            startTimer = null;
-                            if (sufficientlyVisible && video.paused) {
-                                var playPromise = video.play();
-                                if (playPromise && typeof playPromise.catch === 'function') {
-                                    playPromise.catch(function () {
-                                        // If a browser blocks autoplay, the native controls remain available.
-                                    });
-                                }
-                            }
-                        }, 2000);
-                    } else if (!video.paused) {
+                    if (sufficientlyVisible && video.paused) {
+                        var playPromise = video.play();
+                        if (playPromise && typeof playPromise.catch === 'function') {
+                            playPromise.catch(function () {
+                                // If a browser blocks autoplay, the native controls remain available.
+                            });
+                        }
+                    } else if (!sufficientlyVisible && !video.paused) {
                         video.pause();
                     }
                 });
