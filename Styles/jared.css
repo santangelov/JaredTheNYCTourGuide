@@ -23,9 +23,10 @@ li {margin-top:.7em;}
 
 .tripadvisorBadge {
     position: absolute;
-    top: 20%;
-    right: 20px;
-    width: 22% !important;
+    top: auto;
+    right: 6%;
+    bottom: 8%;
+    width: 45% !important;
     transform: rotate(20deg);
     z-index: 20;
 }
@@ -424,6 +425,13 @@ a.link-ta:hover {
 }
 
 @media screen and (min-width: 600px){
+    .tripadvisorBadge {
+        top: 12%;
+        right: 4%;
+        bottom: auto;
+        width: 32% !important;
+    }
+
     .rightSideImage.mobilefull {float:right; margin:10px 0 10px 20px; width:auto; max-width:400px;}
     .leftSideImage.mobilefull {float:left; margin:10px 20px 10px 0; width:auto; max-width:400px;}
 	
