@@ -360,6 +360,46 @@ body {
     font-style: normal;
 }
 
+
+/* Optional split-field hero treatment for discovery/index landing pages. */
+.landingHeroSplitField {
+    position: relative;
+    grid-template-columns: 0.90fr 1.10fr;
+    gap: 36px;
+    isolation: isolate;
+}
+
+.landingHeroSplitField::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 46%;
+    width: 100vw;
+    background: linear-gradient(135deg, #f4f7f3 0%, #e9efe9 48%, #dde7df 100%);
+    clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.landingHeroSplitField .landingHeroVisual {
+    padding: 4px 0 0 8px;
+}
+
+.landingHeroSplitField .landingHeroVisual::before {
+    top: -14px;
+    right: -18px;
+    bottom: 28px;
+    left: 50px;
+    background: rgba(224, 232, 225, 0.92);
+}
+
+.landingHeroSplitField .landingHeroQuote {
+    width: 88%;
+    margin: -38px 0 0 -22px;
+    padding: 17px 19px;
+    box-shadow: 0 10px 24px rgba(44, 63, 49, 0.13);
+}
+
 /* ---------------------------------------------------------
    CONTENT LAYOUTS
    --------------------------------------------------------- */
@@ -1068,6 +1108,28 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .landingHeroSplitField {
+        gap: 38px;
+    }
+
+    .landingHeroSplitField::before {
+        top: 48%;
+        bottom: -8px;
+        left: -24px;
+        width: calc(100% + 48px);
+        clip-path: none;
+        border-radius: 10px;
+    }
+
+    .landingHeroSplitField .landingHeroVisual {
+        padding: 8px 8px 0 8px;
+    }
+
+    .landingHeroSplitField .landingHeroQuote {
+        width: calc(100% - 18px);
+        margin-left: 0;
+    }
+
     .landingHero {
         gap: 38px;
         padding-top: 32px;
@@ -1146,6 +1208,18 @@ body {
 @media screen and (max-width: 620px) {
     .landingPage {
         font-size: 1.02em;
+    }
+
+    .landingHeroSplitField::before {
+        top: 50%;
+        left: -18px;
+        width: calc(100% + 36px);
+        border-radius: 0;
+    }
+
+    .landingHeroSplitField .landingHeroQuote {
+        width: calc(100% - 8px);
+        margin-top: -22px;
     }
 
     .landingSection {
